@@ -1,0 +1,64 @@
+/* Base styles for the entire contents section */
+.contents {
+  text-align: center;
+  background-color: #282c34;
+  color: #FFF;
+  padding: 20px;
+}
+
+/* Styles for the table within the contents section */
+.contents table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+  background-color: #1c1e22;
+  color: #cdd4da;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: 1px solid #FFF;
+}
+
+/* Header and data cell styles */
+.contents th, .contents td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+/* Header row styles */
+.contents th {
+  background-color: #2ea44f;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+/* Row styles: alternating row colors */
+.contents tbody tr:nth-of-type(odd) {
+  background-color: #29313b;
+}
+
+.contents tbody tr:nth-of-type(even) {
+  background-color: #23272a;
+}
+
+/* Hover effect for rows */
+.contents tbody tr:hover {
+  background-color: #1f2733;
+  cursor: pointer;
+}
+
+/* Link styles */
+.contents a {
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.contents a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}

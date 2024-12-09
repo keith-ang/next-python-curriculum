@@ -1,0 +1,75 @@
+/* Base styles for the navbar */
+.navbar {
+  background-color: #333;  /* Dark background */
+  padding: 10px;           /* Padding around the content */
+  display: flex;           /* Use flexbox for layout */
+  align-items: center;     /* Center items vertically */
+  position: relative;      /* For absolute positioning of centered text */
+  height: 40px;
+  margin: 0;
+}
+
+/* Styles for left, center, and right sections in the navbar */
+.navbarLeft, .navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLeft {
+  flex: 1;
+}
+
+.navbarRight {
+  margin-left: auto;  /* Push the right section to the far right */
+}
+
+/* Center the content properly */
+.navbarCenter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+/* Specific styles for links within the navbar */
+.navbar a {
+  color: #f2f2f2;             /* Light text color */
+  text-align: center;         /* Center the text */
+  padding: 14px 16px;         /* Padding for links */
+  text-decoration: none;      /* Remove underline from links */
+  font-size: 17px;            /* Font size for links */
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+  background-color: #ddd;     /* Light background on hover */
+  color: black;               /* Dark text color on hover */
+}
+
+/* Style for the center section heading */
+.navbar h1 {
+  margin: 0;                  /* Remove default margin */
+  font-size: 24px;            /* Font size for the heading */
+  color: #f2f2f2;             /* Light text color for the heading */
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;   /* Stack elements vertically */
+  }
+  
+  .navbarLeft, .navbarRight, .navbarCenter {
+    width: 100%;              /* Full width for mobile */
+    text-align: center;       /* Center text on mobile */
+    justify-content: center;  /* Center flexbox content on mobile */
+  }
+
+  .navbarCenter {
+    position: relative;       /* Reset position for mobile viewport */
+    left: auto;
+    transform: none;
+    margin: 10px 0;
+  }
+}

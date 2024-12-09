@@ -1,0 +1,26 @@
+.curriculumPage {
+  display: flex;
+  height: calc(100vh - 60px); /* Full viewport height minus the navbar height */
+  overflow: hidden; /* Ensure no scroll on the main page */
+  border: #fff 2px;
+}
+
+.curriculumPane {
+  height: 100%; /* Ensure Resizable div takes parent height */
+  overflow: hidden; /* Hide overflow to prevent undesired scroll behavior */
+  background-color: #152238; /* Example background color */
+  position: relative; /* Enable positioning of content inside */
+}
+
+.curriculumScrollContainer {
+  height: 100%;
+  overflow: auto; /* Allow scrolling within the resizable pane */
+}
+
+.editorPane {
+  flex-grow: 1; /* Ensure the editor pane takes up the remaining space */
+  overflow: hidden; /* Prevent the editor pane from overflowing */
+  background-color: #fff; /* Example background color */
+  display: flex;
+  flex-direction: column;
+}
