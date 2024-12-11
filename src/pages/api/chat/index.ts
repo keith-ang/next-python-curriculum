@@ -20,11 +20,13 @@ async function handler(req: Request) {
 
   try {
     const { messages } = await req.json();
-    const lastMessage = messages[messages.length - 1]?.content;
+    const lastMessageObject = messages[messages.length - 1];
 
-    if (typeof lastMessage !== 'string') {
-      throw new Error('Invalid message format');
+    if (typeof lastMessageObject?.content !== 'string' || lastMessageObject.role !== 'user') {
+      throw new Error('Invalid message format or non-user message');
     }
+
+    const lastMessage = lastMessageObject.content;
 
     console.log('Received messages:', JSON.stringify(messages, null, 2));
 
