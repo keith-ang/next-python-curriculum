@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useChat } from "ai/react";
 import { Message } from "ai";
 import Bubble from './Bubble';
