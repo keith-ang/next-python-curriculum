@@ -4,8 +4,12 @@ export const setDays = (days) => ({
 });
 
 export const setFilename = (filename) => ({
-  type: 'SET_FILENAME',
+  type: 'filename/setFilename',
   payload: filename,
+});
+
+export const clearFilename = () => ({
+  type: 'filename/clearFilename',
 });
 
 export const toggleChatbotVisibility = () => ({
