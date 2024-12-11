@@ -43,3 +43,8 @@ next-env.d.ts
 # curriculum files
 /public/images
 /public/json_files
+
+# vector database
+chromadb
+chroma.log
+files_to_rag

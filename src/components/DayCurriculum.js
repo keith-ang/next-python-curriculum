@@ -12,7 +12,6 @@ const DayCurriculum = () => {
     return <div>Loading...</div>;
   }
 
-
   const parseStyle = (styleString) => {
     try {
       return JSON.parse(styleString.replace(/([a-zA-Z0-9-]+?):/g, '"$1":').replace(/'/g, '"'));
@@ -44,7 +43,6 @@ const DayCurriculum = () => {
       return <Tag key={Math.random()} {...finalAttributes} />;
     }
 
-
     const extractTextContent = (children) => {
       return children
         .filter(child => child.type === 'Text')
@@ -59,9 +57,6 @@ const DayCurriculum = () => {
 
     // Extract the text content
     const textContent = extractTextContent(children);
-
-    // Debug statement
-    console.log(`Tag: ${Tag}, Content: ${textContent}`);
 
     return (
       <React.Fragment key={Math.random()}>

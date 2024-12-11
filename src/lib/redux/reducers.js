@@ -1,4 +1,6 @@
+//reducers.js
 import { createSlice } from '@reduxjs/toolkit';
+import { combineReducers } from 'redux'; 
 
 // Days slice
 const daysSlice = createSlice({
@@ -19,14 +21,24 @@ const filenameSlice = createSlice({
   },
 });
 
-// Export actions
+const chatbotVisibilitySlice = createSlice({
+  name: 'chatbotVisibility',
+  initialState: false,
+  reducers: {
+    toggleChatbotVisibility: (state) => {
+      return !state;
+    }
+  }
+});
+
+export const { toggleChatbotVisibility } = chatbotVisibilitySlice.actions;
 export const { setDays } = daysSlice.actions;
 export const { setFilename, clearFilename } = filenameSlice.actions;
 
-// Export reducers
-const rootReducer = {
+const rootReducer = combineReducers({
   days: daysSlice.reducer,
   filename: filenameSlice.reducer,
-};
+  chatbotVisibility: chatbotVisibilitySlice.reducer,
+});
 
 export default rootReducer;

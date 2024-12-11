@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.chatbot {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    width: 100%; 
+    padding: 20px 20px 50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #f8f8f8, #cfcfcf);
+    color: #383838;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.section {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    margin-bottom: 10px; /* Ensure there's space between section and form */
+}
+
+.populated {
+    overflow-y: auto;
+    flex: 1; 
+}
+
+.starterText {
+    padding: 0 40px;
+    flex: 1;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    border-top: 2px solid #828282;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    max-height: 40%; /* Ensure the form element does not exceed 40% of the total container height */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.customTextarea {
+    flex-grow: 1;
+    max-height: 95%; 
+    padding: 10px;
+    font-size: 15px;
+    color: #383838;
+    border: none;
+    resize: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    line-height: 20px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+.customTextarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+.customTextarea::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.submitButton {
+    width: 40px;
+    height: 40px;
+    background-color: #411b8d;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+    outline: none;
+}
+
+.submitButton:hover {
+    background-color: #2f1366;
+}
+
+.submitIcon {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+.bubble {
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    color: #383838;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+    width: 70%;
+    text-align: left;
+    word-wrap: break-word; /* Ensure long words wrap */
+    overflow-wrap: break-word; /* Ensure long words wrap */
+}
+
+.bubbleUser {
+    border-radius: 20px 20px 0 20px;
+    background: #e1f4ff;
+    margin-left: auto;
+}
+
+.bubbleAssistant {
+    border-radius: 20px 20px 20px 0;
+    background-color: #dce7ff;
+}
+
+.promptSuggestionRow {
+    width: 100%;
+}
+
+.promptSuggestionButton {
+    margin: 8px;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #383838;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+}
+
+.promptSuggestionButton:hover {
+    background-color: #e7e7e7;
+}
+
+.loader {
+    margin: 10px;
+    width: 60px;
+    aspect-ratio: 4;
+    background: 
+        no-repeat radial-gradient(circle closest-side, #383838 90%, #0000) 0 50%,
+        no-repeat radial-gradient(circle closest-side, #383838 90%, #0000) 50% 50%,
+        no-repeat radial-gradient(circle closest-side, #383838 90%, #0000) 100% 50%;
+    background-size: calc(100% / 3) 100%;
+    animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+    33% {
+        background-size: calc(100% / 3) 0%, calc(100% / 3) 100%, calc(100% / 3) 100%;
+    }
+    50% {
+        background-size: calc(100% / 3) 100%, calc(100% / 3) 0%, calc(100% / 3) 100%;
+    }
+    66% {
+        background-size: calc(100% / 3) 100%, calc(100% / 3) 100%, calc(100% / 3) 0%;
+    }
+}

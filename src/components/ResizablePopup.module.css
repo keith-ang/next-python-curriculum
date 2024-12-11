@@ -1,0 +1,55 @@
+.popupWrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001; /* Ensure it is above other content */
+  }
+  
+  .toggleButton {
+    background-color: #411b8d;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space between button and container */
+  }
+  
+  .toggleButton:hover {
+    background-color: #2f1366;
+  }
+  
+  .resizableContainer {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure content fits within borders */
+    justify-content: center;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .closeButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+  }
+  
+  .closeButton:hover {
+    color: #000;
+  }

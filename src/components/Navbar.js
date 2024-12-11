@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import { useSelector, useDispatch } from 'react-redux';
-import { clearFilename } from '../lib/redux/reducers';
+import { clearFilename } from '../lib/redux/actions';
+import ResizablePopup from './ResizablePopup';
+import ChatbotRAG from './ChatbotRAG';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -42,13 +44,13 @@ const Navbar = () => {
         <h1>30 Days of Python</h1>
       </div>
       <div className={styles.navbarRight}>
-        {isLessonPage && 
-          <a href={process.env.NEXT_PUBLIC_CHATBOT_URL} target="_blank" rel="noopener noreferrer">
-            Get Help
-          </a>
-        }
-        {isLessonPage && previousLessonLink && <Link href={previousLessonLink}>Previous Lesson</Link>}
-        {isLessonPage && nextLessonLink && <Link href={nextLessonLink}>Next Lesson</Link>}
+        {isLessonPage && (
+          <>
+            {previousLessonLink && <Link href={previousLessonLink}>Previous Lesson</Link>}
+            {nextLessonLink && <Link href={nextLessonLink}>Next Lesson</Link>}
+            <ResizablePopup component={ChatbotRAG} title="Chat" /> {/* This initializes as a button */}
+          </>
+        )}
       </div>
     </nav>
   );
