@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useChat } from "ai/react";
 import { Message } from "ai";
@@ -14,7 +14,10 @@ const ChatbotRAG: React.FC = () => {
     const reduxMessages: Message[] = useSelector((state: any) => state.chatMessages);
     const { append, isLoading, input, handleInputChange, handleSubmit, messages, setMessages } = useChat();
 
-    const [initialMessagesLoaded, setInitialMessagesLoaded] = React.useState(false);
+    const [initialMessagesLoaded, setInitialMessagesLoaded] = useState(false);
+    const [isAtBottom, setIsAtBottom] = useState(true);
+    
+    const chatSectionRef = useRef<HTMLDivElement>(null);
 
     // Load messages from local storage on component mount
     useEffect(() => {
@@ -31,17 +34,52 @@ const ChatbotRAG: React.FC = () => {
         }
     }, [messages, initialMessagesLoaded]);
 
+    const handleScroll = () => {
+        const chatSection = chatSectionRef.current;
+        if (chatSection) {
+            const isBottom = Math.abs(chatSection.scrollHeight - chatSection.scrollTop - chatSection.clientHeight) <= 1;
+            setIsAtBottom(isBottom);
+        }
+    };
+
+    // Check if the user is at the bottom of the scroll
+    useEffect(() => {
+        const chatSection = chatSectionRef.current;
+        if (chatSection) {
+            chatSection.addEventListener('scroll', handleScroll);
+
+            // Initial check to see if we're at the bottom
+            handleScroll();
+        }
+
+        return () => {
+            if (chatSection) {
+                chatSection.removeEventListener('scroll', handleScroll);
+            }
+        };
+    }, []);
+
+    const scrollToBottom = () => {
+        if (chatSectionRef.current) {
+            chatSectionRef.current.scrollTo({
+                top: chatSectionRef.current.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     const noMessages = !messages || messages.length === 0;
 
-    // Synchronize message appending with Redux and the useChat hook
     const appendMessage = (msg: Message) => {
         dispatch(appendChatMessage(msg));
         append(msg);
+        scrollToBottom();
     };
 
     const customHandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         handleSubmit(e);
+        scrollToBottom();
     };
 
     const handleKeyPress = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -55,14 +93,14 @@ const ChatbotRAG: React.FC = () => {
         const msg: Message = {
             id: crypto.randomUUID(),
             content: promptText,
-            role: 'user'
+            role: 'user',
         };
         appendMessage(msg);
     };
 
     return (
         <main className={styles.chatbot}>
-            <section className={noMessages ? styles.empty : styles.populated}>
+            <section className={`${styles.section} ${noMessages ? styles.empty : styles.populated}`} ref={chatSectionRef}>
                 {noMessages ? (
                     <>
                         <p className={styles.starterText}>Ask me a question!</p>
@@ -78,6 +116,11 @@ const ChatbotRAG: React.FC = () => {
                     </>
                 )}
             </section>
+            { !isAtBottom && (
+                <button className={styles.scrollButton} onClick={scrollToBottom}>
+                    ▼
+                </button>
+            )}
             <form className={styles.form} onSubmit={customHandleSubmit}>
                 <div className={styles.inputContainer}>
                     <CustomTextArea
