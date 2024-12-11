@@ -45,8 +45,8 @@ const ResizablePopup = ({ component: Component, title = "Chat" }) => {
           onResizeStop={handleResizeStop}
           minWidth={600}
           minHeight={300}
-          maxWidth={1200}
-          maxHeight={600}
+          maxWidth="80vw"
+          maxHeight="95vh"
           className={styles.resizableContainer}
         >
           <div className={styles.header}>
