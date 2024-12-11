@@ -4,7 +4,7 @@ import CurriculumPage from '../components/CurriculumPage';
 import Navbar from '../components/Navbar';
 import { useSelector } from 'react-redux';
 
-const FilenamePage = ({ data }) => {
+const FilenamePage = () => {
   const router = useRouter();
   const { filename } = router.query;
   const days = useSelector((state) => state.days);

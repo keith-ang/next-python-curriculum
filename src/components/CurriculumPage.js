@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Resizable } from 're-resizable';
 import { setFilename } from '../lib/redux/reducers';
 import DayCurriculum from './DayCurriculum';

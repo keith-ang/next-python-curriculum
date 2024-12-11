@@ -11,7 +11,6 @@ import styles from './ChatbotRAG.module.css';
 
 const ChatbotRAG: React.FC = () => {
     const dispatch = useDispatch();
-    const reduxMessages: Message[] = useSelector((state: any) => state.chatMessages);
     const { append, isLoading, input, handleInputChange, handleSubmit, messages, setMessages } = useChat();
 
     const [initialMessagesLoaded, setInitialMessagesLoaded] = useState(false);
