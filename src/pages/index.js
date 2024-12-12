@@ -12,7 +12,7 @@ const Home = () => {
 
   React.useEffect(() => {
     if (days && days.length > 0) {
-      dispatch(setDays(days));
+      dispatch(setDays(days)); // Rehydrating days state on client-side
     }
   }, [days, dispatch]);
 

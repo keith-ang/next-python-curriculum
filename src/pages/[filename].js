@@ -3,8 +3,21 @@ import React from 'react';
 import Head from 'next/head';
 import CurriculumPage from '../components/CurriculumPage';
 import Navbar from '../components/Navbar';
+import { setDays, setFilename } from '../lib/redux/actions';
+import { useDispatch } from 'react-redux';
+import { useDays } from '../lib/DaysContext';
 
 const FilenamePage = ({ data, filename }) => {
+  const dispatch = useDispatch();
+  const { days } = useDays();
+
+  React.useEffect(() => {
+    if (days && days.length > 0) {
+      dispatch(setDays(days)); // Rehydrating days state on client-side
+    }
+    dispatch(setFilename(filename)); // Setting current filename in redux state
+  }, [days, filename, dispatch]);
+
   return (
     <>
       <Head>
