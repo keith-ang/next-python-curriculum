@@ -4,9 +4,11 @@ import { useDispatch } from 'react-redux';
 import { setDays } from '../lib/redux/reducers';
 import Contents from '../components/Contents';
 import Navbar from '../components/Navbar';
+import { useDays } from '../lib/DaysContext';
 
-const Home = ({ days }) => {
+const Home = () => {
   const dispatch = useDispatch();
+  const { days } = useDays();
 
   React.useEffect(() => {
     if (days && days.length > 0) {
@@ -21,18 +23,5 @@ const Home = ({ days }) => {
     </>
   );
 };
-
-export async function getServerSideProps() {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_FRONTEND_URL}/api/days`);
-  if (!response.ok) {
-    console.error(`Failed to fetch. Status: ${response.status}`);
-    return { props: { days: [] } };
-  }
-  const days = await response.json();
-
-  return {
-    props: { days },
-  };
-}
 
 export default Home;
