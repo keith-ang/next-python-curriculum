@@ -63,7 +63,7 @@ This command creates a directory `chromadb` in your root directory, but you can 
 ### Run Scripts
 1. seed
 
-This command seeds the ChromaDB with document embeddings. It will load the markdown files from the `DOCUMENTS_FOLDER` specified in your `.env` file.
+This command seeds the ChromaDB with document embeddings. It will load all the files from the `DOCUMENTS_FOLDER` specified in your `.env` file.
 
 ```bash
     npm run seed
@@ -90,7 +90,8 @@ This command runs the project in development mode.
     ├── chromadb
     ├── files_to_rag
     │   ├── doc1.md
-    │   ├── doc2.md
+    │   ├── doc2.json
+    |   ├── doc3.pdf
     │   └── ...
     ├── public
     │   ├── json_files
