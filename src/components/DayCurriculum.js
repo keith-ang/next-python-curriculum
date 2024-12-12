@@ -11,7 +11,7 @@ const DayCurriculum = ({ dayContent }) => {
   const parseStyle = (styleString) => {
     try {
       return JSON.parse(styleString.replace(/([a-zA-Z0-9-]+?):/g, '"$1":').replace(/'/g, '"'));
-    } catch (error) {
+    } catch {
       console.error('Failed to parse style string:', styleString);
       return {};
     }
