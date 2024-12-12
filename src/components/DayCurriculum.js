@@ -1,14 +1,10 @@
+// components/DayCurriculum.js
 import React from 'react';
-import { useSelector } from 'react-redux';
-import styles from './DayCurriculum.module.css'
+import styles from './DayCurriculum.module.css';
 import SpeechButton from './SpeechButton';
 
-const DayCurriculum = () => {
-  const days = useSelector((state) => state.days);
-  const filename = useSelector((state) => state.filename);
-  const dayContent = days.find(day => day.filename === filename);
-
-  if (!dayContent) {
+const DayCurriculum = ({ dayContent }) => {
+  if (!dayContent || !dayContent.content) {
     return <div>Loading...</div>;
   }
 
@@ -17,7 +13,6 @@ const DayCurriculum = () => {
       return JSON.parse(styleString.replace(/([a-zA-Z0-9-]+?):/g, '"$1":').replace(/'/g, '"'));
     } catch (error) {
       console.error('Failed to parse style string:', styleString);
-      console.log('Error: ', error)
       return {};
     }
   };
@@ -56,7 +51,6 @@ const DayCurriculum = () => {
       child => child.tagName === 'img' || child.tagName === 'code'
     );
 
-    // Extract the text content
     const textContent = extractTextContent(children);
 
     return (

@@ -1,3 +1,4 @@
+// components/CurriculumPage.js
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Resizable } from 're-resizable';
@@ -6,7 +7,7 @@ import DayCurriculum from './DayCurriculum';
 import PythonEditor from './PythonEditor';
 import styles from './CurriculumPage.module.css';
 
-const CurriculumPage = ({ days, filename }) => {
+const CurriculumPage = ({ dayContent, filename }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -15,8 +16,8 @@ const CurriculumPage = ({ days, filename }) => {
     }
   }, [filename, dispatch]);
   
-  if (!filename) {
-    return <div>Loading...</div>; 
+  if (!dayContent || !dayContent.content) {
+    return <div>Loading...</div>;
   }
 
   return (
@@ -32,7 +33,7 @@ const CurriculumPage = ({ days, filename }) => {
         className={styles.curriculumPane}
       >
         <div className={styles.curriculumScrollContainer}>
-          <DayCurriculum days={days} filename={filename} />
+          <DayCurriculum dayContent={dayContent} />
         </div>
       </Resizable>
       <div className={styles.editorPane}>

@@ -1,5 +1,5 @@
 export const setDays = (days) => ({
-  type: 'SET_DAYS',
+  type: 'days/setDays',
   payload: days,
 });
 
