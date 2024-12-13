@@ -1,0 +1,1073 @@
+{
+    "day": 28,
+    "title": "API",
+    "content": {
+        "tag": "root",
+        "children": [
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Day 28 - API"
+                    }
+                ]
+            },
+            
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "30DaysOfPython",
+                            "src": "../images/30DaysOfPython_banner3@2x.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-day-28"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "📘 Day 28"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#application-programming-interfaceapi"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Application Programming Interface(API)"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#api"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "API"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#building-api"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Building API"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#httphypertext-transfer-protocol"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "HTTP(Hypertext Transfer Protocol)"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#structure-of-http"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Structure of HTTP"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#initial-request-linestatus-line"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Initial Request Line(Status Line)"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "ul",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#initial-response-linestatus-line"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Initial Response Line(Status Line)"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#header-fields"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Header Fields"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#the-message-body"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "The message body"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#request-methods"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Request Methods"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-exercises-day-28"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "💻 Exercises: Day 28"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {
+                    "id": "day-28"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "📘 Day 28"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {
+                    "id": "application-programming-interfaceapi"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Application Programming Interface(API)"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "api"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "API"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "API stands for Application Programming Interface. The kind of API we will cover in this section is going to be Web APIs.\nWeb APIs are the defined interfaces through which interactions happen between an enterprise and applications that use its assets, which also is a Service Level Agreement (SLA) to specify the functional provider and expose the service path or URL for its API users."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In the context of web development, an API is defined as a set of specifications, such as Hypertext Transfer Protocol (HTTP) request messages, along with a definition of the structure of response messages, usually in an XML or a JavaScript Object Notation (JSON) format."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Web API has been moving away from Simple Object Access Protocol (SOAP) based web services and service-oriented architecture (SOA) towards more direct representational state transfer (REST) style web resources."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Social media services, web APIs have allowed web communities to share content and data between communities and different platforms."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Using API, content that is created in one place dynamically can be posted and updated to multiple locations on the web."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "For example, Twitter's REST API allows developers to access core Twitter data and the Search API provides methods for developers to interact with Twitter Search and trends data."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Many applications provide API end points. Some  examples of API such as the countries"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "a",
+                        "attributes": {
+                            "href": "https://restcountries.eu/rest/v2/all"
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "API"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ","
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "a",
+                        "attributes": {
+                            "href": "https://api.thecatapi.com/v1/breeds"
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "cat's breed API"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In this section, we will cover a RESTful API that uses HTTP request methods to GET, PUT, POST and DELETE data."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "building-api"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Building API"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. In the previous sections, we have learned about python, flask and mongoDB. We will use the knowledge we acquire to develop a RESTful API using Python flask and mongoDB database. Every application which has CRUD(Create, Read, Update, Delete) operation has an API to create data, to get data, to update data or to delete data from a database."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "To build an API, it is good to understand HTTP protocol and HTTP request and response cycle."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "httphypertext-transfer-protocol"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "HTTP(Hypertext Transfer Protocol)"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "HTTP is an established communication protocol between a client and a server. A client in this case is a browser and server is the place where you access data. HTTP is a network protocol used to deliver resources which could be files on the World Wide Web, whether they are HTML files, image files, query results, scripts, or other file types."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "A browser is an HTTP client because it sends requests to an HTTP server (Web server), which then sends responses back to the client."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "structure-of-http"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Structure of HTTP"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "HTTP uses client-server model. An HTTP client opens a connection and sends a request message to an HTTP server and the HTTP server returns response message which is the requested resources. When the request response cycle completes the server closes the connection."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "HTTP request response cycle",
+                            "src": "../images/http_request_response_cycle.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The format of the request and response messages are similar. Both kinds of messages have"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "an initial line,"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "zero or more header lines,"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "a blank line (i.e. a CRLF by itself), and"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "an optional message body (e.g. a file, or query data, or query output)."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Let us an example of request and response messages by navigating this site:https://thirtydaysofpython-v1-final.herokuapp.com/. This site has been deployed on Heroku free dyno and in some months may not work because of high request. Support this work to make the server run all the time."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Request and Response header",
+                            "src": "../images/request_response_header.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "initial-request-linestatus-line"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Initial Request Line(Status Line)"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The initial request line is different from the response.\nA request line has three parts, separated by spaces:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "method name(GET, POST, HEAD)"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "path of the requested resource,"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "the version of HTTP being used. eg GET / HTTP/1.1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "GET is the most common HTTP that helps to get or read resource and POST is a common request method to create resource."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "initial-response-linestatus-line"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Initial Response Line(Status Line)"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The initial response line, called the status line, also has three parts separated by spaces:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "HTTP version"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Response status code that gives the result of the request, and a reason which describes the status code. Example of status lines are:\n  HTTP/1.0 200 OK\n  or\n  HTTP/1.0 404 Not Found\n  Notes:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The most common status codes are:\n200 OK: The request succeeded, and the resulting resource (e.g. file or script output) is returned in the message body.\n500 Server Error\nA complete list of HTTP status code can be found"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "a",
+                        "attributes": {
+                            "href": "https://httpstatuses.com/"
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "here"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ". It can be also found"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "a",
+                        "attributes": {
+                            "href": "https://httpstatusdogs.com/"
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "here"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "header-fields"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Header Fields"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "As you have seen in the above screenshot, header lines provide information about the request or response, or about the object sent in the message body."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "GET / HTTP/1.1\nHost: thirtydaysofpython-v1-final.herokuapp.com\nConnection: keep-alive\nPragma: no-cache\nCache-Control: no-cache\nUpgrade-Insecure-Requests: 1\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36\nSec-Fetch-User: ?1\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\nSec-Fetch-Site: same-origin\nSec-Fetch-Mode: navigate\nReferer: https://thirtydaysofpython-v1-final.herokuapp.com/post\nAccept-Encoding: gzip, deflate, br\nAccept-Language: en-GB,en;q=0.9,fi-FI;q=0.8,fi;q=0.7,en-CA;q=0.6,en-US;q=0.5,fr;q=0.4"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "the-message-body"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The message body"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "An HTTP message may have a body of data sent after the header lines. In a response, this is where the requested resource is returned to the client (the most common use of the message body), or perhaps explanatory text if there's an error. In a request, this is where user-entered data or uploaded files are sent to the server."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "If an HTTP message includes a body, there are usually header lines in the message that describe the body. In particular,"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The Content-Type: header gives the MIME-type of the data in the body(text/html, application/json, text/plain, text/css, image/gif).\nThe Content-Length: header gives the number of bytes in the body."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "request-methods"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Request Methods"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The GET, POST, PUT and DELETE are the HTTP request methods which we are going to implement an API or a CRUD operation application."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "p",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "GET: GET method is used to retrieve and get information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data."
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "p",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "POST: POST request is used to create data and send data to the server, for example, creating a new post, file upload, etc. using HTML forms."
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "p",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "PUT: Replaces all current representations of the target resource with the uploaded content and we use it modify or update data."
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "p",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "DELETE: Removes data"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "exercises-day-28"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "💻 Exercises: Day 28"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Read about API and HTTP"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🎉 CONGRATULATIONS ! 🎉"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "|"
+                    }
+                ]
+            }
+        ]
+    }
+}

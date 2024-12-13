@@ -1,0 +1,2215 @@
+{
+    "day": 11,
+    "title": "Functions",
+    "content": {
+        "tag": "root",
+        "children": [
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Day 11 - Functions"
+                    }
+                ]
+            },
+            
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "30DaysOfPython",
+                            "src": "../images/30DaysOfPython_banner3@2x.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-day-11"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "📘 Day 11"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#functions"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Functions"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "ul",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#defining-a-function"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Defining a Function"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#declaring-and-calling-a-function"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Declaring and Calling a Function"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#function-without-parameters"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Function without Parameters"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#function-returning-a-value---part-1"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Function Returning a Value - Part 1"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#function-with-parameters"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Function with Parameters"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#passing-arguments-with-key-and-value"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Passing Arguments with Key and Value"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#function-returning-a-value---part-2"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Function Returning a Value - Part 2"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#function-with-default-parameters"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Function with Default Parameters"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#arbitrary-number-of-arguments"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Arbitrary Number of Arguments"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#default-and-arbitrary-number-of-parameters-in-functions"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Default and Arbitrary Number of Parameters in Functions"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#function-as-a-parameter-of-another-function"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Function as a Parameter of Another Function"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#testimony"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Testimony"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-exercises-day-11"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "💻 Exercises: Day 11"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "ul",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#exercises-level-1"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Exercises: Level 1"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#exercises-level-2"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Exercises: Level 2"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#exercises-level-3"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Exercises: Level 3"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {
+                    "id": "day-11"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "📘 Day 11"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "functions"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Functions"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "So far we have seen many built-in Python functions. In this section, we will focus on custom functions. What is a function? Before we start making functions, let us learn what a function is and why we need them?"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "defining-a-function"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Defining a Function"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "A function is a reusable block of code or programming statements designed to perform a certain task. To define or declare a function, Python provides the"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "keyword. The following is the syntax for defining a function. The function block of code is executed only if the function is called or invoked."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "declaring-and-calling-a-function"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Declaring and Calling a Function"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "When we make a function, we call it declaring a function. When we start using the it,  we call it"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "calling"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "or"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "invoking"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "a function. Function can be declared with or without parameters."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# syntax\n# Declaring a function\ndef function_name():\n    codes\n    codes\n# Calling a function\nfunction_name()"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "function-without-parameters"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Function without Parameters"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Function can be declared without parameters."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def generate_full_name ():\n    first_name = 'Asabeneh'\n    last_name = 'Yetayeh'\n    space = ' '\n    full_name = first_name + space + last_name\n    print(full_name)\ngenerate_full_name () # calling a function\n\ndef add_two_numbers ():\n    num_one = 2\n    num_two = 3\n    total = num_one + num_two\n    print(total)\nadd_two_numbers()"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "function-returning-a-value-part-1"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Function Returning a Value - Part 1"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Function can also return values, if a function does not have a return statement, the value of the function is None. Let us rewrite the above functions using return. From now on, we get a value from a function when we call the function and print it."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def generate_full_name ():\n    first_name = 'Asabeneh'\n    last_name = 'Yetayeh'\n    space = ' '\n    full_name = first_name + space + last_name\n    return full_name\nprint(generate_full_name())\n\ndef add_two_numbers ():\n    num_one = 2\n    num_two = 3\n    total = num_one + num_two\n    return total\nprint(add_two_numbers())"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "function-with-parameters"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Function with Parameters"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In a function we can pass different data types(number, string, boolean, list, tuple, dictionary or set) as a parameter"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Single Parameter: If our function takes a parameter we should call our function with an argument"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# syntax\n  # Declaring a function\n  def function_name(parameter):\n    codes\n    codes\n  # Calling function\n  print(function_name(argument))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def greetings (name):\n    message = name + ', welcome to Python for Everyone!'\n    return message\n\nprint(greetings('Asabeneh'))\n\ndef add_ten(num):\n    ten = 10\n    return num + ten\nprint(add_ten(90))\n\ndef square_number(x):\n    return x * x\nprint(square_number(2))\n\ndef area_of_circle (r):\n    PI = 3.14\n    area = PI * r ** 2\n    return area\nprint(area_of_circle(10))\n\ndef sum_of_numbers(n):\n    total = 0\n    for i in range(n+1):\n        total+=i\n    print(total)\nprint(sum_of_numbers(10)) # 55\nprint(sum_of_numbers(100)) # 5050"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Two Parameter: A function may or may not have a parameter or parameters. A function may also have two or more parameters. If our function takes parameters we should call it with arguments. Let us check a function with two parameters:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# syntax\n  # Declaring a function\n  def function_name(para1, para2):\n    codes\n    codes\n  # Calling function\n  print(function_name(arg1, arg2))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def generate_full_name (first_name, last_name):\n    space = ' '\n      full_name = first_name + space + last_name\n      return full_name\nprint('Full Name: ', generate_full_name('Asabeneh','Yetayeh'))\n\ndef sum_two_numbers (num_one, num_two):\n    sum = num_one + num_two\n    return sum\nprint('Sum of two numbers: ', sum_two_numbers(1, 9))\n\ndef calculate_age (current_year, birth_year):\n    age = current_year - birth_year\n    return age;\n\nprint('Age: ', calculate_age(2021, 1819))\n\ndef weight_of_object (mass, gravity):\n    weight = str(mass * gravity)+ ' N' # the value has to be changed to a string first\n    return weight\nprint('Weight of an object in Newtons: ', weight_of_object(100, 9.81))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "passing-arguments-with-key-and-value"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Passing Arguments with Key and Value"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "If we pass the arguments with key and value, the order of the arguments does not matter."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# syntax\n# Declaring a function\ndef function_name(para1, para2):\n    codes\n    codes\n# Calling function\nprint(function_name(para1 = 'John', para2 = 'Doe')) # the order of arguments does not matter here"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def print_fullname(firstname, lastname):\n    space = ' '\n    full_name = firstname  + space + lastname\n    print(full_name)\nprint(print_fullname(firstname = 'Asabeneh', lastname = 'Yetayeh'))\n\ndef add_two_numbers (num1, num2):\n    total = num1 + num2\n    print(total)\nprint(add_two_numbers(num2 = 3, num1 = 2)) # Order does not matter"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "function-returning-a-value-part-2"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Function Returning a Value - Part 2"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "If we do not return a value with a function, then our function is returning"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "None"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "by default. To return a value with a function we use the keyword"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "return"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "followed by the variable we are returning. We can return any kind of data types from a function."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Returning a string:"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "strong",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Example:"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def print_name(firstname):\n    return firstname\nprint_name('Asabeneh') # Asabeneh\n\ndef print_full_name(firstname, lastname):\n    space = ' '\n    full_name = firstname  + space + lastname\n    return full_name\nprint_full_name(firstname='Asabeneh', lastname='Yetayeh')"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Returning a number:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def add_two_numbers (num1, num2):\n    total = num1 + num2\n    return total\nprint(add_two_numbers(2, 3))\n\ndef calculate_age (current_year, birth_year):\n    age = current_year - birth_year\n    return age;\nprint('Age: ', calculate_age(2019, 1819))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Returning a boolean:"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "strong",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Example:"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def is_even (n):\n    if n % 2 == 0:\n        print('even')\n        return True    # return stops further execution of the function, similar to break \n    return False\nprint(is_even(10)) # True\nprint(is_even(7)) # False"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Returning a list:"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "strong",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Example:"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def find_even_numbers(n):\n    evens = []\n    for i in range(n + 1):\n        if i % 2 == 0:\n            evens.append(i)\n    return evens\nprint(find_even_numbers(10))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "function-with-default-parameters"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Function with Default Parameters"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Sometimes we pass default values to parameters, when we invoke the function. If we do not pass arguments when calling the function, their default values will be used."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# syntax\n# Declaring a function\ndef function_name(param = value):\n    codes\n    codes\n# Calling function\nfunction_name()\nfunction_name(arg)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def greetings (name = 'Peter'):\n    message = name + ', welcome to Python for Everyone!'\n    return message\nprint(greetings())\nprint(greetings('Asabeneh'))\n\ndef generate_full_name (first_name = 'Asabeneh', last_name = 'Yetayeh'):\n    space = ' '\n    full_name = first_name + space + last_name\n    return full_name\n\nprint(generate_full_name())\nprint(generate_full_name('David','Smith'))\n\ndef calculate_age (birth_year,current_year = 2021):\n    age = current_year - birth_year\n    return age;\nprint('Age: ', calculate_age(1821))\n\ndef weight_of_object (mass, gravity = 9.81):\n    weight = str(mass * gravity)+ ' N' # the value has to be changed to string first\n    return weight\nprint('Weight of an object in Newtons: ', weight_of_object(100)) # 9.81 - average gravity on Earth's surface\nprint('Weight of an object in Newtons: ', weight_of_object(100, 1.62)) # gravity on the surface of the Moon"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "arbitrary-number-of-arguments"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Arbitrary Number of Arguments"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "If we do not know the number of arguments we pass to our function, we can create a function which can take arbitrary number of arguments by adding * before the parameter name."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# syntax\n# Declaring a function\ndef function_name(*args):\n    codes\n    codes\n# Calling function\nfunction_name(param1, param2, param3,..)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def sum_all_nums(*nums):\n    total = 0\n    for num in nums:\n        total += num     # same as total = total + num \n    return total\nprint(sum_all_nums(2, 3, 5)) # 10"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "default-and-arbitrary-number-of-parameters-in-functions"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Default and Arbitrary Number of Parameters in Functions"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def generate_groups (team,*args):\n    print(team)\n    for i in args:\n        print(i)\nprint(generate_groups('Team-1','Asabeneh','Brook','David','Eyob'))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "function-as-a-parameter-of-another-function"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Function as a Parameter of Another Function"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "#You can pass functions around as parameters\ndef square_number (n):\n    return n * n\ndef do_something(f, x):\n    return f(x)\nprint(do_something(square_number, 3)) # 27"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🌕 You achieved quite a lot so far.  Keep going! You have just completed day 11 challenges and you are 11 steps a head in to your way to greatness. Now do some exercises for your brain and muscles."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "testimony"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Testimony"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Now it is time to express your thoughts about the Author and 30DaysOfPython. You can leave your testimonial on this"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "a",
+                        "attributes": {
+                            "href": "https://testimonial-s3sw.onrender.com/"
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "link"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "exercises-day-11"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "💻 Exercises: Day 11"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "exercises-level-1"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Exercises: Level 1"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Declare a function"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "em",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "add_two_numbers"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Text",
+                                "content": ". It takes two parameters and it returns a sum."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Area of a circle is calculated as follows: area = π x r x r. Write a function that calculates"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "em",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "area_of_circle"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Text",
+                                "content": "."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Write a function called add_all_nums which takes arbitrary number of arguments and sums all the arguments. Check if all the list items are number types. If not do give a reasonable feedback."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Temperature in °C can be converted to °F using this formula: °F = (°C x 9/5) + 32. Write a function which converts °C to °F,"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "em",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "convert_celsius_to-fahrenheit"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Text",
+                                "content": "."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Write a function called check-season, it takes a month parameter and returns the season: Autumn, Winter, Spring or Summer."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Write a function called calculate_slope which return the slope of a linear equation"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Quadratic equation is calculated as follows: ax² + bx + c = 0. Write a function which calculates solution set of a quadratic equation,"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "em",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "solve_quadratic_eqn"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Text",
+                                "content": "."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Declare a function named reverse_list. It takes an array as a parameter and it returns the reverse of the array (use loops)."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "print(reverse_list([1, 2, 3, 4, 5]))\n# [5, 4, 3, 2, 1]\nprint(reverse_list1([\"A\", \"B\", \"C\"]))\n# [\"C\", \"B\", \"A\"]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']\nprint(add_item(food_staff, 'Meat'))     # ['Potato', 'Tomato', 'Mango', 'Milk','Meat']\nnumbers = [2, 3, 7, 9]\nprint(add_item(numbers, 5))      [2, 3, 7, 9, 5]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']\nprint(remove_item(food_staff, 'Mango'))  # ['Potato', 'Tomato', 'Milk'];\nnumbers = [2, 3, 7, 9]\nprint(remove_item(numbers, 3))  # [2, 7, 9]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Declare a function named sum_of_numbers. It takes a number parameter and it adds all the numbers in that range."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "print(sum_of_numbers(5))  # 15\nprint(sum_of_numbers(10)) # 55\nprint(sum_of_numbers(100)) # 5050"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Declare a function named sum_of_odds. It takes a number parameter and it adds all the odd numbers in that range."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Declare a function named sum_of_even. It takes a number parameter and it adds all the even numbers in that - range."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "exercises-level-2"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Exercises: Level 2"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Declare a function named evens_and_odds . It takes a positive integer as parameter and it counts number of evens and odds in the number."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "print(evens_and_odds(100))\n    # The number of odds are 50.\n    # The number of evens are 51."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Call your function"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "em",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "is_empty"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Text",
+                                "content": ", it takes a parameter and it checks if it is empty or not"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Write different functions which take lists. They should calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (standard deviation)."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "exercises-level-3"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Exercises: Level 3"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Write a function called is_prime, which checks if a number is prime."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Write a functions which checks if all items are unique in the list."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Write a function which checks if all the items of the list are of the same data type."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Write a function which check if provided variable is a valid python variable"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "p",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Go to the data folder and access the countries-data.py file."
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "p",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Create a function called the most_spoken_languages in the world. It should return 10 or 20 most spoken languages in the world in descending order"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Create a function called the most_populated_countries. It should return 10 or 20 most populated countries in descending order."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🎉 CONGRATULATIONS ! 🎉"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "|"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,810 @@
+{
+    "day": 13,
+    "title": "List Comprehension",
+    "content": {
+        "tag": "root",
+        "children": [
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Day 13 - List Comprehension"
+                    }
+                ]
+            },
+            
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "30DaysOfPython",
+                            "src": "../images/30DaysOfPython_banner3@2x.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-day-13"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "📘 Day 13"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#list-comprehension"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "List Comprehension"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#lambda-function"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Lambda Function"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "ul",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#creating-a-lambda-function"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Creating a Lambda Function"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#lambda-function-inside-another-function"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Lambda Function Inside Another Function"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-exercises-day-13"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "💻 Exercises: Day 13"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {
+                    "id": "day-13"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "📘 Day 13"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "list-comprehension"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "List Comprehension"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "List comprehension in Python is a compact way of creating a list from a sequence. It is a short way to create a new list. List comprehension is considerably faster than processing a list using the"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "for"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "loop."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# syntax\n[i for i in iterable if expression]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "For instance if you want to change a string to a list of characters. You can use a couple of methods. Let's see some of them:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# One way\nlanguage = 'Python'\nlst = list(language) # changing the string to list\nprint(type(lst))     # list\nprint(lst)           # ['P', 'y', 't', 'h', 'o', 'n']\n\n# Second way: list comprehension\nlst = [i for i in language]\nprint(type(lst)) # list\nprint(lst)       # ['P', 'y', 't', 'h', 'o', 'n']"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:2"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "For instance if you want to generate a list of numbers"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# Generating numbers\nnumbers = [i for i in range(11)]  # to generate numbers from 0 to 10\nprint(numbers)                    # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n\n# It is possible to do mathematical operations during iteration\nsquares = [i * i for i in range(11)]\nprint(squares)                    # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]\n\n# It is also possible to make a list of tuples\nnumbers = [(i, i * i) for i in range(11)]\nprint(numbers)                             # [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:2"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "List comprehension can be combined with if expression"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# Generating even numbers\neven_numbers = [i for i in range(21) if i % 2 == 0]  # to generate even numbers list in range 0 to 21\nprint(even_numbers)                    # [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]\n\n# Generating odd numbers\nodd_numbers = [i for i in range(21) if i % 2 != 0]  # to generate odd numbers in range 0 to 21\nprint(odd_numbers)                      # [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]\n# Filter numbers: let's filter out positive even numbers from the list below\nnumbers = [-8, -7, -3, -1, 0, 1, 3, 4, 5, 7, 6, 8, 10]\npositive_even_numbers = [i for i in numbers if i % 2 == 0 and i > 0]\nprint(positive_even_numbers)                    # [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]\n\n# Flattening a three dimensional array\nlist_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nflattened_list = [ number for row in list_of_lists for number in row]\nprint(flattened_list)    # [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "lambda-function"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Lambda Function"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Lambda function is a small anonymous function without a name. It can take any number of arguments, but can only have one expression. Lambda function is similar to anonymous functions in JavaScript. We need it when we want to write an anonymous function inside another function."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "creating-a-lambda-function"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Creating a Lambda Function"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "To create a lambda function we use"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "lambda"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "keyword followed by a parameter(s), followed by an expression. See the syntax and the example below. Lambda function does not use return but it explicitly returns the expression."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# syntax\nx = lambda param1, param2, param3: param1 + param2 + param2\nprint(x(arg1, arg2, arg3))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# Named function\ndef add_two_nums(a, b):\n    return a + b\n\nprint(add_two_nums(2, 3))     # 5\n# Lets change the above function to a lambda function\nadd_two_nums = lambda a, b: a + b\nprint(add_two_nums(2,3))    # 5\n\n# Self invoking lambda function\n(lambda a, b: a + b)(2,3) # 5 - need to encapsulate it in print() to see the result in the console\n\nsquare = lambda x : x ** 2\nprint(square(3))    # 9\ncube = lambda x : x ** 3\nprint(cube(3))    # 27\n\n# Multiple variables\nmultiple_variable = lambda a, b, c: a ** 2 - 3 * b + 4 * c\nprint(multiple_variable(5, 5, 3)) # 22"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "lambda-function-inside-another-function"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Lambda Function Inside Another Function"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Using a lambda function inside another function."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def power(x):\n    return lambda n : x ** n\n\ncube = power(2)(3)   # function power now need 2 arguments to run, in separate rounded brackets\nprint(cube)          # 8\ntwo_power_of_five = power(2)(5) \nprint(two_power_of_five)  # 32"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🌕 Keep up the good work. Keep the momentum going, the sky is the limit! You have just completed day 13 challenges and you are 13 steps a head in to your way to greatness. Now do some exercises for your brain and muscles."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "exercises-day-13"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "💻 Exercises: Day 13"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Filter only negative and zero in the list using list comprehension"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "code",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "py\n   numbers = [-4, -3, -2, -1, 0, 2, 4, 6]"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Flatten the following list of lists of lists to a one dimensional list :"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "```py\n   list_of_lists =[[[1, 2, 3]], [[4, 5, 6]], [[7, 8, 9]]]"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "output\n   [1, 2, 3, 4, 5, 6, 7, 8, 9]\n   ```"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Using list comprehension create the following list of tuples:"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "code",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "py\n   [(0, 1, 0, 0, 0, 0, 0),\n   (1, 1, 1, 1, 1, 1, 1),\n   (2, 1, 2, 4, 8, 16, 32),\n   (3, 1, 3, 9, 27, 81, 243),\n   (4, 1, 4, 16, 64, 256, 1024),\n   (5, 1, 5, 25, 125, 625, 3125),\n   (6, 1, 6, 36, 216, 1296, 7776),\n   (7, 1, 7, 49, 343, 2401, 16807),\n   (8, 1, 8, 64, 512, 4096, 32768),\n   (9, 1, 9, 81, 729, 6561, 59049),\n   (10, 1, 10, 100, 1000, 10000, 100000)]"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Flatten the following list to a new list:"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "code",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "py\n   countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]\n   output:\n   [['FINLAND','FIN', 'HELSINKI'], ['SWEDEN', 'SWE', 'STOCKHOLM'], ['NORWAY', 'NOR', 'OSLO']]"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Change the following list to a list of dictionaries:"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "code",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "py\n   countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]\n   output:\n   [{'country': 'FINLAND', 'city': 'HELSINKI'},\n   {'country': 'SWEDEN', 'city': 'STOCKHOLM'},\n   {'country': 'NORWAY', 'city': 'OSLO'}]"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Change the following list of lists to a list of concatenated strings:"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "code",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "py\n   names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]\n   output\n   ['Asabeneh Yetaeyeh', 'David Smith', 'Donald Trump', 'Bill Gates']"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Write a lambda function which can solve a slope or y-intercept of linear functions."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🎉 CONGRATULATIONS ! 🎉"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "|"
+                    }
+                ]
+            }
+        ]
+    }
+}

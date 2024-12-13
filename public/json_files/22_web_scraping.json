@@ -1,0 +1,531 @@
+{
+    "day": 22,
+    "title": "Web Scraping",
+    "content": {
+        "tag": "root",
+        "children": [
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Day 22 - Web Scraping"
+                    }
+                ]
+            },
+            
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "30DaysOfPython",
+                            "src": "../images/30DaysOfPython_banner3@2x.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-day-22"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "📘 Day 22"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#python-web-scraping"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Python Web Scraping"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "ul",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#what-is-web-scrapping"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "What is Web Scrapping"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-exercises-day-22"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "💻 Exercises: Day 22"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {
+                    "id": "day-22"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "📘 Day 22"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "python-web-scraping"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Python Web Scraping"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "what-is-web-scrapping"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "What is Web Scrapping"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The internet is full of huge amount of data which can be used for different purposes. To collect this data we need to know how to scrape data from a website."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Web scraping is the process of extracting and collecting data from websites and storing it on a local machine or in a database."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In this section, we will use beautifulsoup and requests package to scrape data. The package version we are using is beautifulsoup 4."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "To start scraping websites you need"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "requests"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ","
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "beautifoulSoup4"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "and a"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "website"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "pip install requests\npip install beautifulsoup4"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "To scrape data from websites, basic understanding of HTML tags and CSS selectors is needed. We target content from a website using HTML tags, classes or/and ids.\nLet us import the requests and BeautifulSoup module"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "import requests\nfrom bs4 import BeautifulSoup"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Let us declare url variable for the website which we are going to scrape."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "import requests\nfrom bs4 import BeautifulSoup\nurl = 'https://archive.ics.uci.edu/ml/datasets.php'\n\n# Lets use the requests get method to fetch the data from url\n\nresponse = requests.get(url)\n# lets check the status\nstatus = response.status_code\nprint(status) # 200 means the fetching was successful"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "200"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Using beautifulSoup to parse content from the page"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "import requests\nfrom bs4 import BeautifulSoup\nurl = 'https://archive.ics.uci.edu/ml/datasets.php'\n\nresponse = requests.get(url)\ncontent = response.content # we get all the content from the website\nsoup = BeautifulSoup(content, 'html.parser') # beautiful soup will give a chance to parse\nprint(soup.title) # <title>UCI Machine Learning Repository: Data Sets</title>\nprint(soup.title.get_text()) # UCI Machine Learning Repository: Data Sets\nprint(soup.body) # gives the whole page on the website\nprint(response.status_code)\n\ntables = soup.find_all('table', {'cellpadding':'3'})\n# We are targeting the table with cellpadding attribute with the value of 3\n# We can select using id, class or HTML tag , for more information check the beautifulsoup doc\ntable = tables[0] # the result is a list, we are taking out data from it\nfor td in table.find('tr').find_all('td'):\n    print(td.text)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "If you run this code, you can see that the extraction is half done. You can continue doing it because it is part of exercise 1.\nFor reference check the"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "a",
+                        "attributes": {
+                            "href": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/#quick-start"
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "beautifulsoup documentation"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🌕 You are so special, you are progressing everyday. You are left with only eight days to your way to greatness. Now do some exercises for your brain and muscles."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "exercises-day-22"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "💻 Exercises: Day 22"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Scrape the following website and store the data as json file(url = 'http://www.bu.edu/president/boston-university-facts-stats/')."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Extract the table in this url (https://archive.ics.uci.edu/ml/datasets.php) and change it to a json file"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Scrape the presidents table and store the data as json(https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States). The table is not very structured and the scrapping may take very long time."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🎉 CONGRATULATIONS ! 🎉"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "|"
+                    }
+                ]
+            }
+        ]
+    }
+}

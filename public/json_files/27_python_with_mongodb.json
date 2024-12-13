@@ -1,0 +1,2623 @@
+{
+    "day": 27,
+    "title": "Python with MongoDB",
+    "content": {
+        "tag": "root",
+        "children": [
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Day 27 - Python with MongoDB"
+                    }
+                ]
+            },
+            
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "30DaysOfPython",
+                            "src": "../images/30DaysOfPython_banner3@2x.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-day-27"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "📘 Day 27"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#python-with-mongodb"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Python with MongoDB"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#mongodb"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "MongoDB"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "ul",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#sql-versus-nosql"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "SQL versus NoSQL"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#getting-connection-stringmongodb-uri"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Getting Connection String(MongoDB URI)"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#connecting-flask-application-to-mongodb-cluster"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Connecting Flask application to MongoDB Cluster"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#creating-a-database-and-collection"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Creating a database and collection"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#inserting-many-documents-to-collection"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Inserting many documents to collection"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#mongodb-find"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "MongoDB Find"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#find-with-query"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Find with Query"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#find-query-with-modifier"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Find query with modifier"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#limiting-documents"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Limiting documents"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#find-with-sort"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Find with sort"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#update-with-query"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Update with query"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#delete-document"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Delete Document"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#drop-a-collection"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Drop a collection"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-exercises-day-27"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "💻 Exercises: Day 27"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {
+                    "id": "day-27"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "📘 Day 27"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {
+                    "id": "python-with-mongodb"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Python with MongoDB"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Python is a backend technology and it can be connected with different data base applications. It can be connected to both SQL and noSQL databases. In this section, we connect Python with MongoDB database which is noSQL database."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "mongodb"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "MongoDB"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "MongoDB is a NoSQL database. MongoDB stores data in a JSON like document which make MongoDB very flexible and scalable. Let us see the different terminologies of SQL and NoSQL databases. The following table will make the difference between SQL versus NoSQL databases."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "sql-versus-nosql"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "SQL versus NoSQL"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "SQL versus NoSQL",
+                            "src": "../images/mongoDB/sql-vs-nosql.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In this section, we will focus on a NoSQL database MongoDB. Lets sign up on"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "a",
+                        "attributes": {
+                            "href": "https://www.mongodb.com/"
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "mongoDB"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "by click on the sign in button then click register on the next page."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "MongoDB Sign up pages",
+                            "src": "../images/mongoDB/mongodb-signup-page.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Complete the fields and click continue"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Mongodb register",
+                            "src": "../images/mongoDB/mongodb-register.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Select the free plan"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Mongodb free plan",
+                            "src": "../images/mongoDB/mongodb-free.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Choose the proximate free region and give any name for you cluster."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Mongodb cluster name",
+                            "src": "../images/mongoDB/mongodb-cluster-name.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Now, a free sandbox is created"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Mongodb sandbox",
+                            "src": "../images/mongoDB/mongodb-sandbox.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "All local host access"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Mongodb allow ip access",
+                            "src": "../images/mongoDB/mongodb-allow-ip-access.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Add user and password"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Mongodb add user",
+                            "src": "../images/mongoDB/mongodb-add-user.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Create a mongoDB uri link"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Mongodb create uri",
+                            "src": "../images/mongoDB/mongodb-create-uri.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Select Python 3.6 or above driver"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Mongodb python driver",
+                            "src": "../images/mongoDB/mongodb-python-driver.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "getting-connection-stringmongodb-uri"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Getting Connection String(MongoDB URI)"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Copy the connection string link and you will get something like this:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "mongodb+srv://asabeneh:<password>@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Do not worry about the url, it is a means to connect your application with mongoDB.\nLet us replace the password placeholder with the password you used to add a user."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "mongodb+srv://asabeneh:123123123@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Now, I replaced everything and the password is 123123 and the name of the database is"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "thirty_days_python"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ". This is just an example, your password must be stronger than the example password."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Python needs a mongoDB driver to access mongoDB database. We will use"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "pymongo"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "with"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "dnspython"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "to connect our application with mongoDB base . Inside your project directory install pymongo and dnspython."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "pip install pymongo dnspython"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The \"dnspython\" module must be installed to use mongodb+srv:// URIs. The dnspython is a DNS toolkit for Python. It supports almost all record types."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "connecting-flask-application-to-mongodb-cluster"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Connecting Flask application to MongoDB Cluster"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\nprint(client.list_database_names())\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "When we run the above code we get the default mongoDB databases."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "['admin', 'local']"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "creating-a-database-and-collection"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Creating a database and collection"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Let us create a database, database and collection in mongoDB will be created if it doesn't exist. Let's create a data base name"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "thirty_days_of_python"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "and"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "students"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "collection."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "To create a database:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "db = client.name_of_databse # we can create a database like this or the second way\ndb = client['name_of_database']"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\n# Creating database\ndb = client.thirty_days_of_python\n# Creating students collection and inserting a document\ndb.students.insert_one({'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250})\nprint(client.list_database_names())\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "After we create a database, we also created a students collection and we used"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "insert_one()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "method to insert a document.\nNow, the database"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "thirty_days_of_python"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "and"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "students"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "collection have been created and the document has been inserted.\nCheck your mongoDB cluster and you will see both the database and the collection. Inside the collection, there will be a document."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "['thirty_days_of_python', 'admin', 'local']"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "If you see this on the mongoDB cluster, it means you have successfully created a database and a collection."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Creating database and collection",
+                            "src": "../images/mongoDB/mongodb-creating_database.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "If you have seen on the figure, the document has been created with a long id which acts as a primary key. Every time we create a document mongoDB create and unique id for it."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "inserting-many-documents-to-collection"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Inserting many documents to collection"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "insert_one()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "method inserts one item at a time if we want to insert many documents at once either we use"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "insert_many()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "method or for loop.\nWe can use for loop to inset many documents at once."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\n\nstudents = [\n        {'name':'David','country':'UK','city':'London','age':34},\n        {'name':'John','country':'Sweden','city':'Stockholm','age':28},\n        {'name':'Sami','country':'Finland','city':'Helsinki','age':25},\n    ]\nfor student in students:\n    db.students.insert_one(student)\n\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "mongodb-find"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "MongoDB Find"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "find()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "and"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "findOne()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "methods are common method to find data in a collection in mongoDB database. It is similar to the SELECT statement in a MySQL database.\nLet us use the"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "find_one()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "method to get a document in a database collection."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "*find_one({\"_id\": ObjectId(\"id\"}): Gets the first occurrence if an id is not provided"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\nstudent = db.students.find_one()\nprint(student)\n\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Helsinki', 'city': 'Helsinki', 'age': 250}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The above query returns the first entry but we can target specific document using specific _id. Let us do one example, use David's id to get David object.\n'_id':ObjectId('5df68a23f106fe2d315bbc8c')"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nfrom bson.objectid import ObjectId # id object\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\nstudent = db.students.find_one({'_id':ObjectId('5df68a23f106fe2d315bbc8c')})\nprint(student)\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We have seen, how to use"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "find_one()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "using the above examples. Let's move one to"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "find()"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "em",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "find()"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Text",
+                                "content": ": returns all the occurrence from a collection if we don't pass a query object. The object is pymongo.cursor object."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\n\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\nstudents = db.students.find()\nfor student in students:\n    print(student)\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We can specify which fields to return by passing second object in the"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "find({}, {})"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ". 0 means not include and 1 means include but we can not mix 0 and 1, except for _id."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\n\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\nstudents = db.students.find({}, {\"_id\":0,  \"name\": 1, \"country\":1}) # 0 means not include and 1 means include\nfor student in students:\n    print(student)\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'name': 'Asabeneh', 'country': 'Finland'}\n{'name': 'David', 'country': 'UK'}\n{'name': 'John', 'country': 'Sweden'}\n{'name': 'Sami', 'country': 'Finland'}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "find-with-query"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Find with Query"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In mongoDB find take a query object. We can pass a query object and we can filter the documents we like to filter out."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\n\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\n\nquery = {\n    \"country\":\"Finland\"\n}\nstudents = db.students.find(query)\n\nfor student in students:\n    print(student)\n\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Query with modifiers"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nimport pymongo\n\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\n\nquery = {\n    \"city\":\"Helsinki\"\n}\nstudents = db.students.find(query)\nfor student in students:\n    print(student)\n\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "find-query-with-modifier"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Find query with modifier"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nimport pymongo\n\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\nquery = {\n    \"country\":\"Finland\",\n    \"city\":\"Helsinki\"\n}\nstudents = db.students.find(query)\nfor student in students:\n    print(student)\n\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Query with modifiers"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nimport pymongo\n\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\nquery = {\"age\":{\"$gt\":30}}\nstudents = db.students.find(query)\nfor student in students:\n    print(student)\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nimport pymongo\n\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\nquery = {\"age\":{\"$gt\":30}}\nstudents = db.students.find(query)\nfor student in students:\n    print(student)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "limiting-documents"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Limiting documents"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We can limit the number of documents we return using the"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "limit()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "method."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nimport pymongo\n\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\ndb.students.find().limit(3)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "find-with-sort"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Find with sort"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "By default, sort is in ascending order. We can change the sorting to descending order by adding -1 parameter."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nimport pymongo\n\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\nstudents = db.students.find().sort('name')\nfor student in students:\n    print(student)\n\n\nstudents = db.students.find().sort('name',-1)\nfor student in students:\n    print(student)\n\nstudents = db.students.find().sort('age')\nfor student in students:\n    print(student)\n\nstudents = db.students.find().sort('age',-1)\nfor student in students:\n    print(student)\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Ascending order"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Descending order"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}\n{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "update-with-query"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Update with query"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We will use"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "update_one()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "method to update one item. It takes two object one is a query and the second is the new object.\nThe first person, Asabeneh got a very implausible age. Let us update Asabeneh's age."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nimport pymongo\n\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\n\nquery = {'age':250}\nnew_value = {'$set':{'age':38}}\n\ndb.students.update_one(query, new_value)\n# lets check the result if the age is modified\nfor student in db.students.find():\n    print(student)\n\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 38}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "When we want to update many documents at once we use"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "upate_many()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "method."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "delete-document"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Delete Document"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The method"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "delete_one()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "deletes one document. The"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "delete_one()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "takes a query object parameter. It only removes the first occurrence.\nLet us remove one John from the collection."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nimport pymongo\n\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\n\nquery = {'name':'John'}\ndb.students.delete_one(query)\n\nfor student in db.students.find():\n    print(student)\n# lets check the result if the age is modified\nfor student in db.students.find():\n    print(student)\n\n\napp = Flask(__name__)\nif __name__ == '__main__':\n    # for deployment we use the environ\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 38}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}\n{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "As you can see John has been removed from the collection."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "When we want to delete many documents we use"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "delete_many()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "method, it takes a query object. If we pass an empty query object to"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "delete_many({})"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "it will delete all the documents in the collection."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "drop-a-collection"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Drop a collection"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Using the"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "drop()"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "method we can delete a collection from a database."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\nfrom flask import Flask, render_template\nimport os # importing operating system module\nimport pymongo\n\nMONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\ndb.students.drop()"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Now, we have deleted the students collection from the database."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "exercises-day-27"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "💻 Exercises: Day 27"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🎉 CONGRATULATIONS ! 🎉"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "|"
+                    }
+                ]
+            }
+        ]
+    }
+}

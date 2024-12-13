@@ -1,0 +1,1504 @@
+{
+    "day": 17,
+    "title": "Exception Handling",
+    "content": {
+        "tag": "root",
+        "children": [
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Day 17 - Exception Handling"
+                    }
+                ]
+            },
+            
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "30DaysOfPython",
+                            "src": "../images/30DaysOfPython_banner3@2x.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-day-17"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "📘 Day 17"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#exception-handling"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Exception Handling"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#packing-and-unpacking-arguments-in-python"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Packing and Unpacking Arguments in Python"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "ul",
+                                "attributes": {},
+                                "children": [
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#unpacking"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Unpacking"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#unpacking-lists"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Unpacking Lists"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#unpacking-dictionaries"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Unpacking Dictionaries"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#packing"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Packing"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#packing-lists"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Packing Lists"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "li",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Element",
+                                                "tagName": "a",
+                                                "attributes": {
+                                                    "href": "#packing-dictionaries"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "Text",
+                                                        "content": "Packing Dictionaries"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#spreading-in-python"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Spreading in Python"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#enumerate"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Enumerate"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#zip"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Zip"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#exercises-day-17"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Exercises: Day 17"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {
+                    "id": "day-17"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "📘 Day 17"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "exception-handling"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Exception Handling"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Python uses"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "try"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "and"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "except"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "to handle errors gracefully. A graceful exit (or graceful handling) of errors is a simple programming idiom - a program detects a serious error condition and \"exits gracefully\", in a controlled manner as a result. Often the program prints a descriptive error message to a terminal or log as part of the graceful exit, this makes our application more robust. The cause of an exception is often external to the program itself. An example of exceptions could be an incorrect input, wrong file name, unable to find a file, a malfunctioning IO device. Graceful handling of errors prevents our applications from crashing."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We have covered the different Python"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "error"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "types in the previous section. If we use"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "try"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "and"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "except"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "in our program, then it will not raise errors in those blocks."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Try and Except",
+                            "src": "../images/try_except.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "try:\n    code in this block if things go well\nexcept:\n    code in this block run if things go wrong"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "try:\n    print(10 + '5')\nexcept:\n    print('Something went wrong')"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In the example above the second operand is a string. We could change it to float or int to add it with the number to make it work. But without any changes, the second block,"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "except"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ", will be executed."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example:"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "try:\n    name = input('Enter your name:')\n    year_born = input('Year you were born:')\n    age = 2019 - year_born\n    print(f'You are {name}. And your age is {age}.')\nexcept:\n    print('Something went wrong')"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Something went wrong"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In the above example, the exception block will run and we do not know exactly the problem. To analyze the problem, we can use the different error types with except."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In the following example, it will handle the error and will also tell us the kind of error raised."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "try:\n    name = input('Enter your name:')\n    year_born = input('Year you were born:')\n    age = 2019 - year_born\n    print(f'You are {name}. And your age is {age}.')\nexcept TypeError:\n    print('Type error occured')\nexcept ValueError:\n    print('Value error occured')\nexcept ZeroDivisionError:\n    print('zero division error occured')"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Enter your name:Asabeneh\nYear you born:1920\nType error occured"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In the code above the output is going to be"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "TypeError"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ".\nNow, let's add an additional block:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "try:\n    name = input('Enter your name:')\n    year_born = input('Year you born:')\n    age = 2019 - int(year_born)\n    print(f'You are {name}. And your age is {age}.')\nexcept TypeError:\n    print('Type error occur')\nexcept ValueError:\n    print('Value error occur')\nexcept ZeroDivisionError:\n    print('zero division error occur')\nelse:\n    print('I usually run with the try block')\nfinally:\n    print('I alway run.')"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Enter your name:Asabeneh\nYear you born:1920\nYou are Asabeneh. And your age is 99.\nI usually run with the try block\nI alway run."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "It is also shorten the above code as follows:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "try:\n    name = input('Enter your name:')\n    year_born = input('Year you born:')\n    age = 2019 - int(year_born)\n    print(f'You are {name}. And your age is {age}.')\nexcept Exception as e:\n    print(e)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "packing-and-unpacking-arguments-in-python"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Packing and Unpacking Arguments in Python"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We use two operators:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "* for tuples"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "** for dictionaries"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Let us take as an example below. It takes only arguments but we have list. We can unpack the list and changes to argument."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "unpacking"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Unpacking"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h4",
+                "attributes": {
+                    "id": "unpacking-lists"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Unpacking Lists"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def sum_of_five_nums(a, b, c, d, e):\n    return a + b + c + d + e\n\nlst = [1, 2, 3, 4, 5]\nprint(sum_of_five_nums(lst)) # TypeError: sum_of_five_nums() missing 4 required positional arguments: 'b', 'c', 'd', and 'e'"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "When we run the this code, it raises an error, because this function takes numbers (not a list) as arguments. Let us unpack/destructure the list."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def sum_of_five_nums(a, b, c, d, e):\n    return a + b + c + d + e\n\nlst = [1, 2, 3, 4, 5]\nprint(sum_of_five_nums(*lst))  # 15"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We can also use unpacking in the range built-in function that expects a start and an end."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "numbers = range(2, 7)  # normal call with separate arguments\nprint(list(numbers)) # [2, 3, 4, 5, 6]\nargs = [2, 7]\nnumbers = range(*args)  # call with arguments unpacked from a list\nprint(numbers)      # [2, 3, 4, 5,6]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "A list or a tuple can also be unpacked like this:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']\nfin, sw, nor, *rest = countries\nprint(fin, sw, nor, rest)   # Finland Sweden Norway ['Denmark', 'Iceland']\nnumbers = [1, 2, 3, 4, 5, 6, 7]\none, *middle, last = numbers\nprint(one, middle, last)      #  1 [2, 3, 4, 5, 6] 7"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h4",
+                "attributes": {
+                    "id": "unpacking-dictionaries"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Unpacking Dictionaries"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def unpacking_person_info(name, country, city, age):\n    return f'{name} lives in {country}, {city}. He is {age} year old.'\ndct = {'name':'Asabeneh', 'country':'Finland', 'city':'Helsinki', 'age':250}\nprint(unpacking_person_info(**dct)) # Asabeneh lives in Finland, Helsinki. He is 250 years old."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "packing"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Packing"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Sometimes we never know how many arguments need to be passed to a python function. We can use the packing method to allow our function to take unlimited number or arbitrary number of arguments."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "packing-lists"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Packing Lists"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def sum_all(*args):\n    s = 0\n    for i in args:\n        s += i\n    return s\nprint(sum_all(1, 2, 3))             # 6\nprint(sum_all(1, 2, 3, 4, 5, 6, 7)) # 28"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h4",
+                "attributes": {
+                    "id": "packing-dictionaries"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Packing Dictionaries"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "def packing_person_info(**kwargs):\n    # check the type of kwargs and it is a dict type\n    # print(type(kwargs))\n    # Printing dictionary items\n    for key in kwargs:\n        print(f\"{key} = {kwargs[key]}\")\n    return kwargs\n\nprint(packing_person_info(name=\"Asabeneh\",\n      country=\"Finland\", city=\"Helsinki\", age=250))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "name = Asabeneh\ncountry = Finland\ncity = Helsinki\nage = 250\n{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "spreading-in-python"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Spreading in Python"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Like in JavaScript, spreading is possible in Python. Let us check it in an example below:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "lst_one = [1, 2, 3]\nlst_two = [4, 5, 6, 7]\nlst = [0, *lst_one, *lst_two]\nprint(lst)          # [0, 1, 2, 3, 4, 5, 6, 7]\ncountry_lst_one = ['Finland', 'Sweden', 'Norway']\ncountry_lst_two = ['Denmark', 'Iceland']\nnordic_countries = [*country_lst_one, *country_lst_two]\nprint(nordic_countries)  # ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "enumerate"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Enumerate"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "If we are interested in an index of a list, we use"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "enumerate"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "built-in function to get the index of each item in the list."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "for index, item in enumerate([20, 30, 40]):\n    print(index, item)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "for index, i in enumerate(countries):\n    print('hi')\n    if i == 'Finland':\n        print('The country {i} has been found at index {index}')"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "The country Finland has been found at index 1."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "zip"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Zip"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Sometimes we would like to combine lists when looping through them. See the example below:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "fruits = ['banana', 'orange', 'mango', 'lemon', 'lime']                    \nvegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot']\nfruits_and_veges = []\nfor f, v in zip(fruits, vegetables):\n    fruits_and_veges.append({'fruit':f, 'veg':v})\n\nprint(fruits_and_veges)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "[{'fruit': 'banana', 'veg': 'Tomato'}, {'fruit': 'orange', 'veg': 'Potato'}, {'fruit': 'mango', 'veg': 'Cabbage'}, {'fruit': 'lemon', 'veg': 'Onion'}, {'fruit': 'lime', 'veg': 'Carrot'}]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🌕 You are determined. You are 17 steps a head to your way to greatness. Now do some exercises for your brain and muscles."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "exercises-day-17"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Exercises: Day 17"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "names = ['Finland', 'Sweden', 'Norway','Denmark','Iceland', 'Estonia','Russia']. Unpack the first five countries and store them in a variable nordic_countries, store Estonia and Russia in es, and ru respectively."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🎉 CONGRATULATIONS ! 🎉"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "|"
+                    }
+                ]
+            }
+        ]
+    }
+}

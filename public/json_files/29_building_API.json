@@ -1,0 +1,975 @@
+{
+    "day": 29,
+    "title": "Building an API",
+    "content": {
+        "tag": "root",
+        "children": [
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Day 29 - Building an API"
+                    }
+                ]
+            },
+            
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "30DaysOfPython",
+                            "src": "../images/30DaysOfPython_banner3@2x.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#day-29"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "📘 Day 29"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#building-api"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Building API"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#structure-of-an-api"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Structure of an API"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#retrieving-data-using-get"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Retrieving data using get"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#getting-a-document-by-id"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Getting a document by id"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#creating-data-using-post"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Creating data using POST"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#updating-using-put"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Updating using PUT"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#deleting-a-document-using-delete"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Deleting a document using Delete"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-exercises-day-29"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "💻 Exercises: Day 29"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "day-29"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "📘 Day 29"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "building-api"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Building API"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In this section, we will cove a RESTful API that uses HTTP request methods to GET, PUT, POST and DELETE data."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. In the previous sections, we have learned about python, flask and mongoDB. We will use the knowledge we acquire to develop a RESTful API using python flask and mongoDB. Every application which has CRUD(Create, Read, Update, Delete) operation has an API to create data, to get data, to update data or to delete data from database."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The browser can handle only get request. Therefore, we have to have a tool which can help us to handle all request methods(GET, POST, PUT, DELETE)."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Examples of API"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Countries API: https://restcountries.eu/rest/v2/all"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Cats breed API: https://api.thecatapi.com/v1/breeds"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "a",
+                        "attributes": {
+                            "href": "https://www.getpostman.com/"
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Postman"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "is a very popular tool when it comes to API development. So, if you like to do this section you need to"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "a",
+                        "attributes": {
+                            "href": "https://www.getpostman.com/"
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "download postman"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ". An alternative of Postman is"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "a",
+                        "attributes": {
+                            "href": "https://insomnia.rest/download"
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Insomnia"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Postman",
+                            "src": "../images/postman.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "structure-of-an-api"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Structure of an API"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "An API end point is a URL which can help to retrieve, create, update or delete a resource. The structure looks like this:\nExample:\nhttps://api.twitter.com/1.1/lists/members.json\nReturns the members of the specified list. Private list members will only be shown if the authenticated user owns the specified list.\nThe name of the company name followed by version followed by the purpose of the API.\nThe methods:\nHTTP methods & URLs"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The API uses the following HTTP methods for object manipulation:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "GET        Used for object retrieval\nPOST       Used for object creation and object actions\nPUT        Used for object update\nDELETE     Used for object deletion"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Let us build an API which collects information about 30DaysOfPython students. We will collect the name, country, city, date of birth, skills and bio."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "To implement this API, we will use:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Postman"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Python"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Flask"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "MongoDB"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "retrieving-data-using-get"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Retrieving data using get"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In this step, let us use dummy data and return it as a json. To return it as json, will use json module and Response module."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\n\nfrom flask import Flask,  Response\nimport json\n\napp = Flask(__name__)\n\n@app.route('/api/v1.0/students', methods = ['GET'])\ndef students ():\n    student_list = [\n        {\n            'name':'Asabeneh',\n            'country':'Finland',\n            'city':'Helsinki',\n            'skills':['HTML', 'CSS','JavaScript','Python']\n        },\n        {\n            'name':'David',\n            'country':'UK',\n            'city':'London',\n            'skills':['Python','MongoDB']\n        },\n        {\n            'name':'John',\n            'country':'Sweden',\n            'city':'Stockholm',\n            'skills':['Java','C#']\n        }\n    ]\n    return Response(json.dumps(student_list), mimetype='application/json')\n\n\nif __name__ == '__main__':\n    # for deployment\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "When you request the http://localhost:5000/api/v1.0/students url on the browser you will get this:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Get on browser",
+                            "src": "../images/get_on_browser.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "When you request the http://localhost:5000/api/v1.0/students url on the browser you will get this:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "Get on postman",
+                            "src": "../images/get_on_postman.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In stead of displaying dummy data let us connect the flask application with MongoDB and get data from mongoDB database."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\n\nfrom flask import Flask,  Response\nimport json\nimport pymongo\n\n\napp = Flask(__name__)\n\n#\nMONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\n\n@app.route('/api/v1.0/students', methods = ['GET'])\ndef students ():\n\n    return Response(json.dumps(student), mimetype='application/json')\n\n\nif __name__ == '__main__':\n    # for deployment\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "By connecting the flask, we can fetch students collection data from the thirty_days_of_python database."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "[\n    {\n        \"_id\": {\n            \"$oid\": \"5df68a21f106fe2d315bbc8b\"\n        },\n        \"name\": \"Asabeneh\",\n        \"country\": \"Finland\",\n        \"city\": \"Helsinki\",\n        \"age\": 38\n    },\n    {\n        \"_id\": {\n            \"$oid\": \"5df68a23f106fe2d315bbc8c\"\n        },\n        \"name\": \"David\",\n        \"country\": \"UK\",\n        \"city\": \"London\",\n        \"age\": 34\n    },\n    {\n        \"_id\": {\n            \"$oid\": \"5df68a23f106fe2d315bbc8e\"\n        },\n        \"name\": \"Sami\",\n        \"country\": \"Finland\",\n        \"city\": \"Helsinki\",\n        \"age\": 25\n    }\n]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "getting-a-document-by-id"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Getting a document by id"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We can access signle document using an id, let's access Asabeneh using his id.\nhttp://localhost:5000/api/v1.0/students/5df68a21f106fe2d315bbc8b"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\n\nfrom flask import Flask,  Response\nimport json\nfrom bson.objectid import ObjectId\nimport json\nfrom bson.json_util import dumps\nimport pymongo\n\n\napp = Flask(__name__)\n\n#\nMONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\n\n@app.route('/api/v1.0/students', methods = ['GET'])\ndef students ():\n\n    return Response(json.dumps(student), mimetype='application/json')\n@app.route('/api/v1.0/students/<id>', methods = ['GET'])\ndef single_student (id):\n    student = db.students.find({'_id':ObjectId(id)})\n    return Response(dumps(student), mimetype='application/json')\n\nif __name__ == '__main__':\n    # for deployment\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "[\n    {\n        \"_id\": {\n            \"$oid\": \"5df68a21f106fe2d315bbc8b\"\n        },\n        \"name\": \"Asabeneh\",\n        \"country\": \"Finland\",\n        \"city\": \"Helsinki\",\n        \"age\": 38\n    }\n]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "creating-data-using-post"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Creating data using POST"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We use the POST request method to create data"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\n\nfrom flask import Flask,  Response\nimport json\nfrom bson.objectid import ObjectId\nimport json\nfrom bson.json_util import dumps\nimport pymongo\nfrom datetime import datetime\n\n\napp = Flask(__name__)\n\n#\nMONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\n\n@app.route('/api/v1.0/students', methods = ['GET'])\ndef students ():\n\n    return Response(json.dumps(student), mimetype='application/json')\n@app.route('/api/v1.0/students/<id>', methods = ['GET'])\ndef single_student (id):\n    student = db.students.find({'_id':ObjectId(id)})\n    return Response(dumps(student), mimetype='application/json')\n@app.route('/api/v1.0/students', methods = ['POST'])\ndef create_student ():\n    name = request.form['name']\n    country = request.form['country']\n    city = request.form['city']\n    skills = request.form['skills'].split(', ')\n    bio = request.form['bio']\n    birthyear = request.form['birthyear']\n    created_at = datetime.now()\n    student = {\n        'name': name,\n        'country': country,\n        'city': city,\n        'birthyear': birthyear,\n        'skills': skills,\n        'bio': bio,\n        'created_at': created_at\n\n    }\n    db.students.insert_one(student)\n    return ;\ndef update_student (id):\nif __name__ == '__main__':\n    # for deployment\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "updating-using-put"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Updating using PUT"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\n\nfrom flask import Flask,  Response\nimport json\nfrom bson.objectid import ObjectId\nimport json\nfrom bson.json_util import dumps\nimport pymongo\nfrom datetime import datetime\n\n\napp = Flask(__name__)\n\n#\nMONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\n\n@app.route('/api/v1.0/students', methods = ['GET'])\ndef students ():\n\n    return Response(json.dumps(student), mimetype='application/json')\n@app.route('/api/v1.0/students/<id>', methods = ['GET'])\ndef single_student (id):\n    student = db.students.find({'_id':ObjectId(id)})\n    return Response(dumps(student), mimetype='application/json')\n@app.route('/api/v1.0/students', methods = ['POST'])\ndef create_student ():\n    name = request.form['name']\n    country = request.form['country']\n    city = request.form['city']\n    skills = request.form['skills'].split(', ')\n    bio = request.form['bio']\n    birthyear = request.form['birthyear']\n    created_at = datetime.now()\n    student = {\n        'name': name,\n        'country': country,\n        'city': city,\n        'birthyear': birthyear,\n        'skills': skills,\n        'bio': bio,\n        'created_at': created_at\n\n    }\n    db.students.insert_one(student)\n    return\n@app.route('/api/v1.0/students/<id>', methods = ['PUT']) # this decorator create the home route\ndef update_student (id):\n    query = {\"_id\":ObjectId(id)}\n    name = request.form['name']\n    country = request.form['country']\n    city = request.form['city']\n    skills = request.form['skills'].split(', ')\n    bio = request.form['bio']\n    birthyear = request.form['birthyear']\n    created_at = datetime.now()\n    student = {\n        'name': name,\n        'country': country,\n        'city': city,\n        'birthyear': birthyear,\n        'skills': skills,\n        'bio': bio,\n        'created_at': created_at\n\n    }\n    db.students.update_one(query, student)\n    # return Response(dumps({\"result\":\"a new student has been created\"}), mimetype='application/json')\n    return\ndef update_student (id):\nif __name__ == '__main__':\n    # for deployment\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "deleting-a-document-using-delete"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Deleting a document using Delete"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "# let's import the flask\n\nfrom flask import Flask,  Response\nimport json\nfrom bson.objectid import ObjectId\nimport json\nfrom bson.json_util import dumps\nimport pymongo\nfrom datetime import datetime\n\n\napp = Flask(__name__)\n\n#\nMONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'\nclient = pymongo.MongoClient(MONGODB_URI)\ndb = client['thirty_days_of_python'] # accessing the database\n\n@app.route('/api/v1.0/students', methods = ['GET'])\ndef students ():\n\n    return Response(json.dumps(student), mimetype='application/json')\n@app.route('/api/v1.0/students/<id>', methods = ['GET'])\ndef single_student (id):\n    student = db.students.find({'_id':ObjectId(id)})\n    return Response(dumps(student), mimetype='application/json')\n@app.route('/api/v1.0/students', methods = ['POST'])\ndef create_student ():\n    name = request.form['name']\n    country = request.form['country']\n    city = request.form['city']\n    skills = request.form['skills'].split(', ')\n    bio = request.form['bio']\n    birthyear = request.form['birthyear']\n    created_at = datetime.now()\n    student = {\n        'name': name,\n        'country': country,\n        'city': city,\n        'birthyear': birthyear,\n        'skills': skills,\n        'bio': bio,\n        'created_at': created_at\n\n    }\n    db.students.insert_one(student)\n    return\n@app.route('/api/v1.0/students/<id>', methods = ['PUT']) # this decorator create the home route\ndef update_student (id):\n    query = {\"_id\":ObjectId(id)}\n    name = request.form['name']\n    country = request.form['country']\n    city = request.form['city']\n    skills = request.form['skills'].split(', ')\n    bio = request.form['bio']\n    birthyear = request.form['birthyear']\n    created_at = datetime.now()\n    student = {\n        'name': name,\n        'country': country,\n        'city': city,\n        'birthyear': birthyear,\n        'skills': skills,\n        'bio': bio,\n        'created_at': created_at\n\n    }\n    db.students.update_one(query, student)\n    # return Response(dumps({\"result\":\"a new student has been created\"}), mimetype='application/json')\n    return\n@app.route('/api/v1.0/students/<id>', methods = ['PUT']) # this decorator create the home route\ndef update_student (id):\n    query = {\"_id\":ObjectId(id)}\n    name = request.form['name']\n    country = request.form['country']\n    city = request.form['city']\n    skills = request.form['skills'].split(', ')\n    bio = request.form['bio']\n    birthyear = request.form['birthyear']\n    created_at = datetime.now()\n    student = {\n        'name': name,\n        'country': country,\n        'city': city,\n        'birthyear': birthyear,\n        'skills': skills,\n        'bio': bio,\n        'created_at': created_at\n\n    }\n    db.students.update_one(query, student)\n    # return Response(dumps({\"result\":\"a new student has been created\"}), mimetype='application/json')\n    return ;\n@app.route('/api/v1.0/students/<id>', methods = ['DELETE'])\ndef delete_student (id):\n    db.students.delete_one({\"_id\":ObjectId(id)})\n    return\nif __name__ == '__main__':\n    # for deployment\n    # to make it work for both production and development\n    port = int(os.environ.get(\"PORT\", 5000))\n    app.run(debug=True, host='0.0.0.0', port=port)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "exercises-day-29"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "💻 Exercises: Day 29"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Implement the above example and develop"
+                            },
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "https://thirtydayofpython-api.herokuapp.com/"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "this"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🎉 CONGRATULATIONS ! 🎉"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "|"
+                    }
+                ]
+            }
+        ]
+    }
+}

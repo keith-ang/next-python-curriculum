@@ -1,0 +1,1239 @@
+{
+    "day": 16,
+    "title": "Python Date time",
+    "content": {
+        "tag": "root",
+        "children": [
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Day 16 - Python Date time"
+                    }
+                ]
+            },
+            
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "30DaysOfPython",
+                            "src": "../images/30DaysOfPython_banner3@2x.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-day-16"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "📘 Day 16"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#python-datetime"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Python"
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "em",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Text",
+                                                "content": "datetime"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#getting-datetime-information"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Getting"
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "em",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Text",
+                                                "content": "datetime"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Text",
+                                        "content": "Information"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#formatting-date-output-using-strftime"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Formatting Date Output Using"
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "em",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Text",
+                                                "content": "strftime"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#string-to-time-using-strptime"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "String to Time Using"
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "em",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Text",
+                                                "content": "strptime"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#using-date-from-datetime"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Using"
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "em",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Text",
+                                                "content": "date"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Text",
+                                        "content": "from"
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "em",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Text",
+                                                "content": "datetime"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#time-objects-to-represent-time"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Time Objects to Represent Time"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#difference-between-two-points-in-time-using"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Difference Between Two Points in Time Using"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#difference-between-two-points-in-time-using-timedelta"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Difference Between Two Points in Time Using"
+                                    },
+                                    {
+                                        "type": "Element",
+                                        "tagName": "em",
+                                        "attributes": {},
+                                        "children": [
+                                            {
+                                                "type": "Text",
+                                                "content": "timedelta"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-exercises-day-16"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "💻 Exercises: Day 16"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },        
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {
+                    "id": "day-16"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "📘 Day 16"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "python-datetime"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Python"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "datetime"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Python has got"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "datetime"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "module to handle date and time."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "import datetime\nprint(dir(datetime))\n['MAXYEAR', 'MINYEAR', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'date', 'datetime', 'datetime_CAPI', 'sys', 'time', 'timedelta', 'timezone', 'tzinfo']"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "With dir or help built-in commands it is possible to know the available functions in a certain module. As you can see, in the datetime module there are many functions, but we will focus on"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "date"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ","
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "datetime"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ","
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "time"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "and"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "timedelta"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ". Let se see them one by one."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "getting-datetime-information"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Getting"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "datetime"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "Information"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "from datetime import datetime\nnow = datetime.now()\nprint(now)                      # 2021-07-08 07:34:46.549883\nday = now.day                   # 8\nmonth = now.month               # 7\nyear = now.year                 # 2021\nhour = now.hour                 # 7\nminute = now.minute             # 38\nsecond = now.second\ntimestamp = now.timestamp()\nprint(day, month, year, hour, minute)\nprint('timestamp', timestamp)\nprint(f'{day}/{month}/{year}, {hour}:{minute}')  # 8/7/2021, 7:38"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Timestamp or Unix timestamp is the number of seconds elapsed from 1st of January 1970 UTC."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "formatting-date-output-using-strftime"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Formatting Date Output Using"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "strftime"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "from datetime import datetime\nnew_year = datetime(2020, 1, 1)\nprint(new_year)      # 2020-01-01 00:00:00\nday = new_year.day\nmonth = new_year.month\nyear = new_year.year\nhour = new_year.hour\nminute = new_year.minute\nsecond = new_year.second\nprint(day, month, year, hour, minute) #1 1 2020 0 0\nprint(f'{day}/{month}/{year}, {hour}:{minute}')  # 1/1/2020, 0:0"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Formatting date time using"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "strftime"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "method and the documentation can be found"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "a",
+                        "attributes": {
+                            "href": "https://strftime.org/"
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "here"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "from datetime import datetime\n# current date and time\nnow = datetime.now()\nt = now.strftime(\"%H:%M:%S\")\nprint(\"time:\", t)\ntime_one = now.strftime(\"%m/%d/%Y, %H:%M:%S\")\n# mm/dd/YY H:M:S format\nprint(\"time one:\", time_one)\ntime_two = now.strftime(\"%d/%m/%Y, %H:%M:%S\")\n# dd/mm/YY H:M:S format\nprint(\"time two:\", time_two)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "time: 01:05:01\ntime one: 12/05/2019, 01:05:01\ntime two: 05/12/2019, 01:05:01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Here are all the"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "strftime"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "symbols we use to format time. An example of all the formats for this module."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "strftime",
+                            "src": "../images/strftime.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "string-to-time-using-strptime"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "String to Time Using"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "strptime"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Here is a"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "a",
+                        "attributes": {
+                            "href": "https://www.programiz.com/python-programming/datetime/strptimet"
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "documentation"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "hat helps to understand the format."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "from datetime import datetime\ndate_string = \"5 December, 2019\"\nprint(\"date_string =\", date_string)\ndate_object = datetime.strptime(date_string, \"%d %B, %Y\")\nprint(\"date_object =\", date_object)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "date_string = 5 December, 2019\ndate_object = 2019-12-05 00:00:00"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "using-date-from-datetime"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Using"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "date"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "from"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "datetime"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "from datetime import date\nd = date(2020, 1, 1)\nprint(d)\nprint('Current date:', d.today())    # 2019-12-05\n# date object of today's date\ntoday = date.today()\nprint(\"Current year:\", today.year)   # 2019\nprint(\"Current month:\", today.month) # 12\nprint(\"Current day:\", today.day)     # 5"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "time-objects-to-represent-time"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Time Objects to Represent Time"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "from datetime import time\n# time(hour = 0, minute = 0, second = 0)\na = time()\nprint(\"a =\", a)\n# time(hour, minute and second)\nb = time(10, 30, 50)\nprint(\"b =\", b)\n# time(hour, minute and second)\nc = time(hour=10, minute=30, second=50)\nprint(\"c =\", c)\n# time(hour, minute, second, microsecond)\nd = time(10, 30, 50, 200555)\nprint(\"d =\", d)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "output"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "br",
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Text",
+                        "content": "a = 00:00:00"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "br",
+                        "attributes": {}
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "difference-between-two-points-in-time-using"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Difference Between Two Points in Time Using"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "today = date(year=2019, month=12, day=5)\nnew_year = date(year=2020, month=1, day=1)\ntime_left_for_newyear = new_year - today\n# Time left for new year:  27 days, 0:00:00\nprint('Time left for new year: ', time_left_for_newyear)\n\nt1 = datetime(year = 2019, month = 12, day = 5, hour = 0, minute = 59, second = 0)\nt2 = datetime(year = 2020, month = 1, day = 1, hour = 0, minute = 0, second = 0)\ndiff = t2 - t1\nprint('Time left for new year:', diff) # Time left for new year: 26 days, 23: 01: 00"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "difference-between-two-points-in-time-using-timedelta"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Difference Between Two Points in Time Using"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "timedelta"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "from datetime import timedelta\nt1 = timedelta(weeks=12, days=10, hours=4, seconds=20)\nt2 = timedelta(days=7, hours=5, minutes=3, seconds=30)\nt3 = t1 - t2\nprint(\"t3 =\", t3)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-sh"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "date_string = 5 December, 2019\n    date_object = 2019-12-05 00:00:00\n    t3 = 86 days, 22:56:50"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🌕 You are an extraordinary. You are 16 steps a head to your way to greatness. Now do some exercises for your brain and muscles."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "exercises-day-16"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "💻 Exercises: Day 16"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Get the current day, month, year, hour, minute and timestamp from datetime module"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Format the current date using this format: \"%m/%d/%Y, %H:%M:%S\")"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Today is 5 December, 2019. Change this time string to time."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Calculate the time difference between now and new year."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Calculate the time difference between 1 January 1970 and now."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Think, what can you use the datetime module for? Examples:"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Time series analysis"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "To get a timestamp of any activities in an application"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Adding posts on a blog"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🎉 CONGRATULATIONS ! 🎉"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "|"
+                    }
+                ]
+            }
+        ]
+    }
+}

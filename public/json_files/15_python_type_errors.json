@@ -1,0 +1,1393 @@
+{
+    "day": 15,
+    "title": "Python Type Errors",
+    "content": {
+        "tag": "root",
+        "children": [
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Day 15 - Python Type Errors"
+                    }
+                ]
+            },
+            
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "img",
+                        "attributes": {
+                            "alt": "30DaysOfPython",
+                            "src": "../images/30DaysOfPython_banner3@2x.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ul",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-day-15"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "📘 Day 15"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#python-error-types"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "Python Error Types"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#syntaxerror"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "SyntaxError"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#nameerror"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "NameError"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#indexerror"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "IndexError"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#modulenotfounderror"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "ModuleNotFoundError"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#attributeerror"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "AttributeError"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#keyerror"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "KeyError"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#typeerror"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "TypeError"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#importerror"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "ImportError"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#valueerror"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "ValueError"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#zerodivisionerror"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "ZeroDivisionError"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Element",
+                                "tagName": "a",
+                                "attributes": {
+                                    "href": "#-exercises-day-15"
+                                },
+                                "children": [
+                                    {
+                                        "type": "Text",
+                                        "content": "💻 Exercises: Day 15"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },               
+            {
+                "type": "Element",
+                "tagName": "h1",
+                "attributes": {
+                    "id": "day-15"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "📘 Day 15"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "python-error-types"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Python Error Types"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "When we write code it is common that we make a typo or some other common error. If our code fails to run, the Python interpreter will display a message, containing feedback with information on where the problem occurs and the type of an error. It will also sometimes gives us suggestions on a possible fix. Understanding different types of errors in programming languages will help us to debug our code quickly and also it makes us better at what we do."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Let us see the most common error types one by one. First let us open our Python interactive shell. Go to your you computer terminal and write 'python'. The python interactive shell will be opened."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "syntaxerror"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "SyntaxError"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example 1: SyntaxError"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> print 'hello world'\n  File \"<stdin>\", line 1\n    print 'hello world'\n                      ^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print('hello world')?\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "As you can see we made a syntax error because we forgot to enclose the string with parenthesis and Python already suggests the solution. Let us fix it."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> print 'hello world'\n  File \"<stdin>\", line 1\n    print 'hello world'\n                      ^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print('hello world')?\n>>> print('hello world')\nhello world\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The error was a"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "SyntaxError"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ". After the fix our code was executed without a hitch. Let see more error types."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "nameerror"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "NameError"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example 1: NameError"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> print(age)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nNameError: name 'age' is not defined\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "As you can see from the message above, name age is not defined. Yes, it is true that we did not define an age variable but we were trying to print it out as if we had had declared it. Now, lets fix this by declaring it and assigning with a value."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> print(age)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nNameError: name 'age' is not defined\n>>> age = 25\n>>> print(age)\n25\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "The type of error was a"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "NameError"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ". We debugged the error by defining the variable name."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "indexerror"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "IndexError"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example 1: IndexError"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> numbers = [1, 2, 3, 4, 5]\n>>> numbers[5]\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nIndexError: list index out of range\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In the example above, Python raised an"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "IndexError"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ", because the list has only indexes from 0 to 4 , so it was out of range."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "modulenotfounderror"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "ModuleNotFoundError"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example 1: ModuleNotFoundError"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import maths\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nModuleNotFoundError: No module named 'maths'\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In the example above, I added an extra s to math deliberately and"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "ModuleNotFoundError"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": "was raised. Lets fix it by removing the extra s from math."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import maths\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nModuleNotFoundError: No module named 'maths'\n>>> import math\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We fixed it, so let's use some of the functions from the math module."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "attributeerror"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "AttributeError"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example 1: AttributeError"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import maths\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nModuleNotFoundError: No module named 'maths'\n>>> import math\n>>> math.PI\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nAttributeError: module 'math' has no attribute 'PI'\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "As you can see, I made a mistake again! Instead of pi, I tried to call a PI function from maths module. It raised an attribute error, it means, that the function does not exist in the module. Lets fix it by changing from PI to pi."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import maths\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nModuleNotFoundError: No module named 'maths'\n>>> import math\n>>> math.PI\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nAttributeError: module 'math' has no attribute 'PI'\n>>> math.pi\n3.141592653589793\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Now, when we call pi from the math module we got the result."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "keyerror"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "KeyError"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example 1: KeyError"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> users = {'name':'Asab', 'age':250, 'country':'Finland'}\n>>> users['name']\n'Asab'\n>>> users['county']\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nKeyError: 'county'\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "As you can see, there was a typo in the key used to get the dictionary value. so, this is a key error and the fix is quite straight forward. Let's do this!"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> user = {'name':'Asab', 'age':250, 'country':'Finland'}\n>>> user['name']\n'Asab'\n>>> user['county']\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nKeyError: 'county'\n>>> user['country']\n'Finland'\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We debugged the error, our code ran and we got the value."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "typeerror"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "TypeError"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example 1: TypeError"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> 4 + '3'\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In the example above, a TypeError is raised because we cannot add a number to a string. First solution would be to convert the string to int or float. Another solution would be converting the number to a string (the result then would be '43'). Let us follow the first fix."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> 4 + '3'\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n>>> 4 + int('3')\n7\n>>> 4 + float('3')\n7.0\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "Error removed and we got the result we expected."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "importerror"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "ImportError"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "strong",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Example 1: TypeError"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> from math import power\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nImportError: cannot import name 'power' from 'math'\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "There is no function called power in the math module, it goes with a different name:"
+                    },
+                    {
+                        "type": "Element",
+                        "tagName": "em",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "pow"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "content": ". Let's correct it:"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> from math import power\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nImportError: cannot import name 'power' from 'math'\n>>> from math import pow\n>>> pow(2,3)\n8.0\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "valueerror"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "ValueError"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> int('12a')\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nValueError: invalid literal for int() with base 10: '12a'\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "In this case we cannot change the given string to a number, because of the 'a' letter in it."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h3",
+                "attributes": {
+                    "id": "zerodivisionerror"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "ZeroDivisionError"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "pre",
+                "attributes": {
+                    "className": [
+                        "codehilite"
+                    ]
+                },
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "code",
+                        "attributes": {
+                            "className": [
+                                "language-py"
+                            ]
+                        },
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "asabeneh@Asabeneh:~$ python\nPython 3.9.6 (default, Jun 28 2021, 15:26:21)\n[Clang 11.0.0 (clang-1100.0.33.8)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> 1/0\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nZeroDivisionError: division by zero\n>>>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We cannot divide a number by zero."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "We have covered some of the python error types, if you want to check more about it check the python documentation about python error types.\nIf you are good at reading the error types then you will be able to fix your bugs fast and you will also become a better programmer."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🌕 You are excelling. You made it to half way to your way to greatness. Now do some exercises for your brain and for your muscle."
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "h2",
+                "attributes": {
+                    "id": "exercises-day-15"
+                },
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "💻 Exercises: Day 15"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "ol",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Element",
+                        "tagName": "li",
+                        "attributes": {},
+                        "children": [
+                            {
+                                "type": "Text",
+                                "content": "Open you python interactive shell and try all the examples covered in this section."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "🎉 CONGRATULATIONS ! 🎉"
+                    }
+                ]
+            },
+            {
+                "type": "Element",
+                "tagName": "p",
+                "attributes": {},
+                "children": [
+                    {
+                        "type": "Text",
+                        "content": "|"
+                    }
+                ]
+            }
+        ]
+    }
+}
