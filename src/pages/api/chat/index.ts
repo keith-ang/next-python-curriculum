@@ -1,22 +1,48 @@
-export const runtime = 'edge'; // This ensures the route uses the Edge runtime environment
+export const runtime = 'edge';  // This ensures the route uses the Edge runtime environment
 
 import { StreamingTextResponse, OpenAIStream } from 'ai';
-import OpenAI from 'openai';
 import { createTemplate } from '@/templates/systemPrompt';
 import { NextResponse } from 'next/server';
+import { callLLM } from './llm';
 
 async function handler(req: Request) {
-  console.log('API request received');
-  const apiKey = process.env.OPENAI_API_KEY;
-  const chatModel = process.env.OPENAI_CHAT_MODEL || 'gpt-3.5-turbo'; // default model
-  const clientUrl = `${process.env.NEXT_PUBLIC_FRONTEND_URL}/api/chroma`;
+  const serviceProvider = process.env.SERVICE_PROVIDER;
+  console.log(`Service provider: ${serviceProvider}`);
 
-  if (!apiKey || !clientUrl) {
-    console.error('OPENAI_API_KEY or CHROMA_DATABASE_URL is not defined in environment variables.');
+  const clientUrl = process.env.NEXT_PUBLIC_FRONTEND_URL
+    ? `${process.env.NEXT_PUBLIC_FRONTEND_URL}/api/chroma`
+    : null;
+
+  if (!clientUrl) {
+    console.error('NEXT_PUBLIC_FRONTEND_URL is not defined in environment variables.');
     return NextResponse.json({ error: 'Required environment variables not defined' }, { status: 500 });
   }
 
-  const openai = new OpenAI({ apiKey: apiKey });
+  let chatModel;
+
+  try {
+    if (!serviceProvider) {
+      throw new Error('SERVICE_PROVIDER is not defined in environment variables.');
+    }
+
+    if (serviceProvider === 'openai') {
+      chatModel = process.env.OPENAI_CHAT_MODEL || 'gpt-3.5-turbo';  // Default model
+    } else if (serviceProvider === 'azure_openai') {
+      chatModel = process.env.AZURE_OPENAI_CHAT_MODEL || 'gpt-3.5-turbo';  // Default model
+    } else if (serviceProvider === 'openrouter') {
+      chatModel = process.env.OPENROUTER_CHAT_MODEL || 'openai/gpt-3.5-turbo';  // Default model
+    } else {
+      throw new Error('Unsupported service provider');
+    }
+
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    } else {
+      console.error('Unknown error occurred');
+    }
+    return NextResponse.json({ error: error instanceof Error ? error.message : 'Internal Server Error' }, { status: 500 });
+  }
 
   try {
     const { messages } = await req.json();
@@ -27,7 +53,6 @@ async function handler(req: Request) {
     }
 
     const lastMessage = lastMessageObject.content;
-
     console.log('Received messages:', JSON.stringify(messages, null, 2));
 
     let docContext = '';
@@ -50,20 +75,41 @@ async function handler(req: Request) {
     }
 
     const template = createTemplate({ docContext, userMessage: lastMessage });
-    console.log(`Message sent to OpenAI: ${template.content}`);
+    console.log(`Message sent to LLM: ${template.content}`);
 
-    const response = await openai.chat.completions.create({
-      model: chatModel,
-      stream: true,
-      messages: [template, ...messages],
+    const response = await callLLM({
+      messages: messages.slice(-10),   // keep short term memory to last 10 messages
+      serviceProvider, 
+      template,
+      chatModel
     });
 
-    const stream = OpenAIStream(response);
+    let stream;
+    if (serviceProvider === 'openrouter') {
+      // Convert the OpenRouter response to a ReadableStream
+      const messageContent = response.choices[0].message.content;
+      const encoder = new TextEncoder();
+      const readableStream = new ReadableStream({
+        start(controller) {
+          controller.enqueue(encoder.encode(messageContent));
+          controller.close();
+        }
+      });
+      stream = readableStream;
+    } else {
+      stream = OpenAIStream(response);
+    }
+
     return new StreamingTextResponse(stream);
 
   } catch (err) {
-    console.error(err);
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    if (err instanceof Error) {
+      console.error(err.message);
+      return NextResponse.json({ error: err.message }, { status: 500 });
+    } else {
+      console.error('Unknown error occurred');
+      return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    }
   }
 }
 
