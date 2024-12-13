@@ -1,5 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { combineReducers } from 'redux';
+import { createSlice, combineReducers } from '@reduxjs/toolkit';
 
 // Days slice
 const daysSlice = createSlice({
@@ -38,6 +37,7 @@ const chatMessagesSlice = createSlice({
     appendChatMessage: (state, action) => {
       state.push(action.payload);
     },
+    clearChatMessages: () => []
   },
 });
 
@@ -52,12 +52,14 @@ const popupSizeSlice = createSlice({
   },
 });
 
+// Export actions
 export const { setDays } = daysSlice.actions;
 export const { setFilename, clearFilename } = filenameSlice.actions;
 export const { toggleChatbotVisibility } = chatbotVisibilitySlice.actions;
-export const { setChatMessages, appendChatMessage } = chatMessagesSlice.actions;
+export const { setChatMessages, appendChatMessage, clearChatMessages } = chatMessagesSlice.actions;
 export const { setPopupSize } = popupSizeSlice.actions;
 
+// Combine reducers
 const rootReducer = combineReducers({
   days: daysSlice.reducer,
   filename: filenameSlice.reducer,

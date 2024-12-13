@@ -26,6 +26,10 @@ export const appendChatMessage = (message) => ({
   payload: message,
 });
 
+export const clearChatMessages = () => ({
+  type: 'chatMessages/clearChatMessages',
+})
+
 export const setPopupSize = (size) => ({
   type: 'popupSize/setPopupSize',
   payload: size,

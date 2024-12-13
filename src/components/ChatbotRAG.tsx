@@ -1,16 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useChat } from "ai/react";
 import { Message } from "ai";
 import Bubble from './Bubble';
 import LoadingBubble from './LoadingBubble';
 import PromptSuggestionRow from './PromptSuggestionRow';
 import CustomTextArea from './CustomTextArea';
-import { setChatMessages, appendChatMessage } from '../lib/redux/actions';
+import { setChatMessages, appendChatMessage } from '../lib/redux/reducers';
+import { RootState } from '../lib/redux/rootState'; // Import the RootState type
 import styles from './ChatbotRAG.module.css';
 
 const ChatbotRAG: React.FC = () => {
     const dispatch = useDispatch();
+    const messagesFromRedux = useSelector((state: RootState) => state.chatMessages); // Specify the state type
     const { append, isLoading, input, handleInputChange, handleSubmit, messages, setMessages } = useChat();
 
     const [initialMessagesLoaded, setInitialMessagesLoaded] = useState(false);
@@ -25,6 +27,11 @@ const ChatbotRAG: React.FC = () => {
         dispatch(setChatMessages(storedMessages)); // Initialize messages in Redux
         setInitialMessagesLoaded(true);
     }, [dispatch, setMessages]);
+
+    // Sync messages from Redux store to local state in useChat
+    useEffect(() => {
+        setMessages(messagesFromRedux);
+    }, [messagesFromRedux, setMessages]);
 
     // Save messages to local storage whenever they change
     useEffect(() => {

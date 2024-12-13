@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { Resizable } from "re-resizable";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleChatbotVisibility, setPopupSize } from "../lib/redux/actions";
+import { toggleChatbotVisibility, setPopupSize } from "../lib/redux/reducers";
+import ClearMessagesButton from "./ClearMessagesButton";
 import styles from "./ResizablePopup.module.css";
 
 const ResizablePopup = ({ component: Component, title = "Chat" }) => {
@@ -9,7 +10,6 @@ const ResizablePopup = ({ component: Component, title = "Chat" }) => {
   const isVisible = useSelector((state) => state.chatbotVisibility);
   const size = useSelector((state) => state.popupSize);
 
-  // Load size from localStorage on component mount
   useEffect(() => {
     const width = localStorage.getItem("popupWidth");
     const height = localStorage.getItem("popupHeight");
@@ -27,7 +27,6 @@ const ResizablePopup = ({ component: Component, title = "Chat" }) => {
     const newHeight = size.height + d.height;
     dispatch(setPopupSize({ width: newWidth, height: newHeight }));
 
-    // Save new dimensions to localStorage
     localStorage.setItem("popupWidth", newWidth.toString());
     localStorage.setItem("popupHeight", newHeight.toString());
   };
@@ -50,6 +49,7 @@ const ResizablePopup = ({ component: Component, title = "Chat" }) => {
           className={styles.resizableContainer}
         >
           <div className={styles.header}>
+            <ClearMessagesButton />
             <button onClick={toggleVisibility} className={styles.closeButton}>
               &times;
             </button>
