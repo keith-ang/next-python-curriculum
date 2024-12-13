@@ -7,7 +7,7 @@ This project aims to set up and integrate a Retrieval-Augmented Generation (RAG)
 ## Features
 - **Configurable LLM Chat Service Provider**: The chatbot can use OpenAI, Azure OpenAI, or OpenRouter for generating chat responses.
 - **OpenAI for Embeddings**: The embeddings used for document retrieval are generated using OpenAI's embedding services exclusively.
-- **Python Curriculum**: A comprehensive web application designed to teach and support learning Python, dynamically rendered from JSON files.
+- **Python Curriculum**: A comprehensive web application designed to teach and support learning Python, dynamically rendered from JSON files. The Python curriculum is adapted from [30-Days-Of-Python](https://github.com/Asabeneh/30-Days-Of-Python) by Asabeneh Yetayeh.
 - **Student Assistance**: The integrated chatbot helps students by retrieving relevant information and answering curriculum-related queries.
 
 ## Setup
@@ -75,7 +75,7 @@ Set up ChromaDB locally with the following command:
 ```bash
 chroma run --path ./chromadb
 ```
-This command creates a directory `chromadb` in your root directory, but you can change it to any other filepath. Make sure ChromaDB is running on the specified `CHROMA_DATABASE_URL`.
+This command creates a directory `chromadb` in your root directory but you can change it to whatever you like, and also a subdirectory called the value specified in the `CHROMA_COLLECTION_NAME` environment variable. Make sure ChromaDB is running on the specified `CHROMA_DATABASE_URL`.
 
 ### Run Scripts
 1. seed
@@ -115,6 +115,9 @@ npm run dev
     │   │   ├── curriculum1.json
     │   │   ├── curriculum2.json
     │   │   └── ...
+    |   ├── images
+    │   │   ├── img1.jpg
+    │   │   └── ...
     ├── src
     │   ├── components
     │   │   └── ...
@@ -134,7 +137,7 @@ The chatbot interacts with users via the `/api/chat` endpoint, which processes u
 #### index.ts
 The handler function processes incoming requests and generates chat responses. It performs the following steps:
 
-1. Determine the Service Provider: Reads the SERVICE_PROVIDER environment variable to determine which LLM service provider to use (openai, azure_openai, or openrouter).
+1. Determine the Service Provider: Reads the `SERVICE_PROVIDER` environment variable to determine which LLM service provider to use (`openai`, `azure_openai`, or `openrouter`).
 2. Receive and Validate Messages: Processes and validates incoming messages to ensure the last message is from the user and is in the correct format.
 3. Fetch Document Context: Retrieves relevant document context from ChromaDB based on the user query.
 4. Generate Template: Creates a message template incorporating the document context.
@@ -212,15 +215,20 @@ This project can be scaled to any application that aims to dynamically render co
 1. Define the Content Structure:
     - Determine the structure of your content in JSON files.
     - Ensure that JSON files match the format provided in the section above. This format is structured to be easily converted from HTML to JSON, similar to npm packages that facilitate such conversions.
+
 2. Set Up ChromaDB:
     - Use ChromaDB to manage and query your documents. Follow the setup steps in this project to install and run ChromaDB locally or deploy it on a server.
     - Utilize the `initialiseDb.ts` and `embedDocuments.ts` scripts to manage the document embedding and retrieval process.
+    
 3. Configure LLM Service Providers:
     - Choose the LLM service providers you want to use for generating chat responses (OpenAI, Azure OpenAI, or OpenRouter).
+
 4. Set up the necessary environment variables to configure the service providers. Ensure that the `SERVICE_PROVIDER` environment variable matches the provided API keys and details.
+
 5. Implement the Chatbot:
     - Implement the necessary API endpoints such as `/api/chat` and `/api/chroma` to handle user queries and document retrieval.
     - Use the `index.ts` and `llm.ts` files as templates to process user messages, fetch relevant document context, and generate responses using the chosen LLM service provider.
+
 6. Embed and Upsert Documents:
     - Use the embedDocuments.ts script to read, chunk, and embed documents from your content directory. Upsert the embedded document chunks into ChromaDB to make them available for querying.
 
